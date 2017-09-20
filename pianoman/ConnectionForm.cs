@@ -113,5 +113,21 @@ namespace pianoman
                 eV3Messenger.SendMessage("Music", "arm2");
             }
         }
+
+        private void sendArm3Button_Click(object sender, EventArgs e)
+        {
+            if (eV3Messenger.IsConnected)
+            {
+                eV3Messenger.SendMessage("Music", "arm3");
+            }
+        }
+
+        private void sendArm4Button_Click(object sender, EventArgs e)
+        {
+            if (eV3Messenger.IsConnected)
+            {
+                eV3Messenger.SendMessage("Music", "arm4");                
+            }
+        }
     }
 }

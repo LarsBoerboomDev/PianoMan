@@ -37,6 +37,8 @@
             this.connectedDeviceLabel = new System.Windows.Forms.Label();
             this.sendArm1Button = new System.Windows.Forms.Button();
             this.sendArm2Button = new System.Windows.Forms.Button();
+            this.sendArm3Button = new System.Windows.Forms.Button();
+            this.sendArm4Button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,11 +133,33 @@
             this.sendArm2Button.UseVisualStyleBackColor = true;
             this.sendArm2Button.Click += new System.EventHandler(this.sendArm2Button_Click);
             // 
+            // sendArm3Button
+            // 
+            this.sendArm3Button.Location = new System.Drawing.Point(43, 226);
+            this.sendArm3Button.Name = "sendArm3Button";
+            this.sendArm3Button.Size = new System.Drawing.Size(99, 23);
+            this.sendArm3Button.TabIndex = 8;
+            this.sendArm3Button.Text = "SendArm3Button";
+            this.sendArm3Button.UseVisualStyleBackColor = true;
+            this.sendArm3Button.Click += new System.EventHandler(this.sendArm3Button_Click);
+            // 
+            // sendArm4Button
+            // 
+            this.sendArm4Button.Location = new System.Drawing.Point(43, 255);
+            this.sendArm4Button.Name = "sendArm4Button";
+            this.sendArm4Button.Size = new System.Drawing.Size(99, 23);
+            this.sendArm4Button.TabIndex = 9;
+            this.sendArm4Button.Text = "sendArm4Button";
+            this.sendArm4Button.UseVisualStyleBackColor = true;
+            this.sendArm4Button.Click += new System.EventHandler(this.sendArm4Button_Click);
+            // 
             // ConnectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 343);
+            this.Controls.Add(this.sendArm4Button);
+            this.Controls.Add(this.sendArm3Button);
             this.Controls.Add(this.sendArm2Button);
             this.Controls.Add(this.sendArm1Button);
             this.Controls.Add(this.groupBox1);
@@ -158,5 +182,7 @@
         private System.Windows.Forms.Label connectedDeviceLabel;
         private System.Windows.Forms.Button sendArm1Button;
         private System.Windows.Forms.Button sendArm2Button;
+        private System.Windows.Forms.Button sendArm3Button;
+        private System.Windows.Forms.Button sendArm4Button;
     }
 }
