@@ -61,7 +61,9 @@ namespace pianoman
             String port = serialPortSelectionBox.Text;
             if (eV3Messenger.Connect(port))
             {
-
+                messageReceiverTimer.Start();
+                UpdateButtonsAndConnectionInfo();
+                button1.Enabled = true;
             }
             else
             {
@@ -93,6 +95,23 @@ namespace pianoman
         {
             eV3Messenger.Disconnect();
             UpdateButtonsAndConnectionInfo();
+            messageReceiverTimer.Stop();
+        }
+
+        private void sendArm1Button_Click(object sender, EventArgs e)
+        {
+            if (eV3Messenger.IsConnected)
+            {
+                eV3Messenger.SendMessage("Music", "arm1");
+            }
+        }
+
+        private void sendArm2Button_Click(object sender, EventArgs e)
+        {
+            if (eV3Messenger.IsConnected)
+            {
+                eV3Messenger.SendMessage("Music", "arm1");
+            }
         }
     }
 }
