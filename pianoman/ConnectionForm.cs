@@ -110,7 +110,7 @@ namespace pianoman
         {
             if (eV3Messenger.IsConnected)
             {
-                eV3Messenger.SendMessage("Music", "arm1");
+                eV3Messenger.SendMessage("Music", "arm2");
             }
         }
     }
