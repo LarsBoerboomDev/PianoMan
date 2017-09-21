@@ -19,7 +19,8 @@ namespace pianoman
         private Timer messageReceiverTimer;
         public ConnectionForm()
         {
-            InitializeComponent();
+            InitializeComponent();                        
+                
             eV3Messenger = new EV3Messenger();
 
             //Starts timer 
@@ -29,6 +30,8 @@ namespace pianoman
 
             FillSerialPortSelectionBoxWithAvailablePorts();
         }
+
+        //fill a selectionbox with available ports
         private void FillSerialPortSelectionBoxWithAvailablePorts()
         {
             String[] ports = SerialPort.GetPortNames();
@@ -50,7 +53,6 @@ namespace pianoman
         }
 
         //rescans the ports
-
         private void rescanPortsButton_Click(object sender, EventArgs e)
         {
             FillSerialPortSelectionBoxWithAvailablePorts();
