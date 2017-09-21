@@ -16,5 +16,21 @@ namespace pianoman
         {
             InitializeComponent();
         }
+
+        string noot;
+        decimal time;
+
+        private void addnoteButton_Click(object sender, EventArgs e)
+        {
+            noot = nootCombo.Text;
+            time = timeNummeric.Value;
+
+            List<string>[] list = new List<String>[];
+            list[0] = new List<string>();
+            list[1] = new List<string>();
+
+            list[0].add("hello");
+            list[1].add("world");
+        }
     }
 }
