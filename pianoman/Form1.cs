@@ -13,8 +13,7 @@ namespace pianoman
     public partial class Form1 : Form
     {
 
-        public List<string> noteList = new List<string>();
-        //private Dictionary<string, decimal> noteList = new Dictionary<string, decimal>();
+        public List<string> noteList = new List<string>();        
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +53,11 @@ namespace pianoman
             int deletedNote = listBox1.SelectedIndex;
             noteList.RemoveAt(deletedNote);            
             fillMusicList();
+        }
+
+        private void loadsongButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

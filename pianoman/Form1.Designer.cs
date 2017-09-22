@@ -135,6 +135,7 @@
             this.loadsongButton.TabIndex = 8;
             this.loadsongButton.Text = "Load song";
             this.loadsongButton.UseVisualStyleBackColor = true;
+            this.loadsongButton.Click += new System.EventHandler(this.loadsongButton_Click);
             // 
             // clearsongButton
             // 
