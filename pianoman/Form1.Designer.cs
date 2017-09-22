@@ -41,6 +41,8 @@
             this.playsongButton = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.songNameTextbox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +99,7 @@
             // 
             // addnoteButton
             // 
-            this.addnoteButton.Location = new System.Drawing.Point(16, 98);
+            this.addnoteButton.Location = new System.Drawing.Point(16, 138);
             this.addnoteButton.Name = "addnoteButton";
             this.addnoteButton.Size = new System.Drawing.Size(156, 23);
             this.addnoteButton.TabIndex = 5;
@@ -107,7 +109,7 @@
             // 
             // removenoteButton
             // 
-            this.removenoteButton.Location = new System.Drawing.Point(16, 127);
+            this.removenoteButton.Location = new System.Drawing.Point(16, 167);
             this.removenoteButton.Name = "removenoteButton";
             this.removenoteButton.Size = new System.Drawing.Size(156, 23);
             this.removenoteButton.TabIndex = 6;
@@ -116,16 +118,17 @@
             // 
             // savesongButton
             // 
-            this.savesongButton.Location = new System.Drawing.Point(16, 156);
+            this.savesongButton.Location = new System.Drawing.Point(16, 196);
             this.savesongButton.Name = "savesongButton";
             this.savesongButton.Size = new System.Drawing.Size(156, 23);
             this.savesongButton.TabIndex = 7;
             this.savesongButton.Text = "Save song";
             this.savesongButton.UseVisualStyleBackColor = true;
+            this.savesongButton.Click += new System.EventHandler(this.savesongButton_Click);
             // 
             // loadsongButton
             // 
-            this.loadsongButton.Location = new System.Drawing.Point(16, 185);
+            this.loadsongButton.Location = new System.Drawing.Point(16, 225);
             this.loadsongButton.Name = "loadsongButton";
             this.loadsongButton.Size = new System.Drawing.Size(156, 23);
             this.loadsongButton.TabIndex = 8;
@@ -134,7 +137,7 @@
             // 
             // clearsongButton
             // 
-            this.clearsongButton.Location = new System.Drawing.Point(16, 214);
+            this.clearsongButton.Location = new System.Drawing.Point(16, 254);
             this.clearsongButton.Name = "clearsongButton";
             this.clearsongButton.Size = new System.Drawing.Size(156, 23);
             this.clearsongButton.TabIndex = 9;
@@ -143,7 +146,7 @@
             // 
             // playsongButton
             // 
-            this.playsongButton.Location = new System.Drawing.Point(16, 243);
+            this.playsongButton.Location = new System.Drawing.Point(16, 283);
             this.playsongButton.Name = "playsongButton";
             this.playsongButton.Size = new System.Drawing.Size(156, 23);
             this.playsongButton.TabIndex = 10;
@@ -167,11 +170,29 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Song:";
             // 
+            // songNameTextbox
+            // 
+            this.songNameTextbox.Location = new System.Drawing.Point(16, 112);
+            this.songNameTextbox.Name = "songNameTextbox";
+            this.songNameTextbox.Size = new System.Drawing.Size(156, 20);
+            this.songNameTextbox.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(13, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Songname";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 276);
+            this.ClientSize = new System.Drawing.Size(313, 332);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.songNameTextbox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.playsongButton);
@@ -208,6 +229,8 @@
         private System.Windows.Forms.Button playsongButton;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox songNameTextbox;
+        private System.Windows.Forms.Label label5;
     }
 }
 

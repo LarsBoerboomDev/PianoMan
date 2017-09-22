@@ -39,5 +39,9 @@ namespace pianoman
             }
         }
 
+        private void savesongButton_Click(object sender, EventArgs e)
+        {
+            writeToTXT save = new writeToTXT(noteList, songNameTextbox.Text);
+        }
     }
 }
