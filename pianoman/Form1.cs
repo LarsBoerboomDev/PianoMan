@@ -43,5 +43,17 @@ namespace pianoman
         {
             writeToTXT save = new writeToTXT(noteList, songNameTextbox.Text);
         }
+
+        private void clearsongButton_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+        }
+
+        private void removenoteButton_Click(object sender, EventArgs e)
+        {
+            int deletedNote = listBox1.SelectedIndex;
+            noteList.RemoveAt(deletedNote);            
+            fillMusicList();
+        }
     }
 }

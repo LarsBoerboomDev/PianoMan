@@ -115,6 +115,7 @@
             this.removenoteButton.TabIndex = 6;
             this.removenoteButton.Text = "Remove note";
             this.removenoteButton.UseVisualStyleBackColor = true;
+            this.removenoteButton.Click += new System.EventHandler(this.removenoteButton_Click);
             // 
             // savesongButton
             // 
@@ -143,6 +144,7 @@
             this.clearsongButton.TabIndex = 9;
             this.clearsongButton.Text = "Clear song";
             this.clearsongButton.UseVisualStyleBackColor = true;
+            this.clearsongButton.Click += new System.EventHandler(this.clearsongButton_Click);
             // 
             // playsongButton
             // 
