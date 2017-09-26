@@ -57,7 +57,13 @@ namespace pianoman
 
         private void loadsongButton_Click(object sender, EventArgs e)
         {
-
+            listBox1.Items.Clear();
+            loadSong song = new loadSong();
+            foreach (var item in song.loadASong())
+            {
+                
+                listBox1.Items.Add(item);
+            }
         }
     }
 }
