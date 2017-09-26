@@ -60,9 +60,22 @@ namespace pianoman
             listBox1.Items.Clear();
             loadSong song = new loadSong();
             foreach (var item in song.loadASong())
-            {
-                
+            {                
                 listBox1.Items.Add(item);
+            }
+        }
+
+        private void playsongButton_Click(object sender, EventArgs e)
+        {
+            //play song on the computer
+            playSound play = new playSound();
+            foreach (var item in listBox1.Items)
+            {
+                string items = item.ToString();
+                string[] notes = items.Split(',');
+                string note = notes[0];
+                string timer = notes[1];
+                play.PlayNote(note, timer);
             }
         }
     }

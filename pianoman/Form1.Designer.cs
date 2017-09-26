@@ -91,7 +91,7 @@
             "D",
             "E",
             "F",
-            "G"});
+            "G#"});
             this.nootCombo.Location = new System.Drawing.Point(51, 66);
             this.nootCombo.Name = "nootCombo";
             this.nootCombo.Size = new System.Drawing.Size(121, 21);
@@ -155,6 +155,7 @@
             this.playsongButton.TabIndex = 10;
             this.playsongButton.Text = "Play song";
             this.playsongButton.UseVisualStyleBackColor = true;
+            this.playsongButton.Click += new System.EventHandler(this.playsongButton_Click);
             // 
             // listBox1
             // 
