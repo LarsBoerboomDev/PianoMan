@@ -76,6 +76,7 @@
             // 
             // timeNummeric
             // 
+            this.timeNummeric.Hexadecimal = true;
             this.timeNummeric.Location = new System.Drawing.Point(52, 40);
             this.timeNummeric.Name = "timeNummeric";
             this.timeNummeric.Size = new System.Drawing.Size(120, 20);
@@ -95,7 +96,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(325, 42);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(200, 264);
+            this.listBox1.Size = new System.Drawing.Size(200, 290);
             this.listBox1.TabIndex = 11;
             // 
             // addnoteButton
@@ -186,9 +187,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(13, 96);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Songname";
+            this.label5.Text = "Naam liedje";
             // 
             // playSongRobot
             // 
@@ -225,7 +226,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Pianoman";
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

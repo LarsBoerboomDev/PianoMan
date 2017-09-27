@@ -12,9 +12,7 @@ using System.Windows.Forms;
 namespace pianoman
 {
     public partial class Form1 : Form
-    {
-
-
+    {    
         private EV3Messenger mindstorm;
         public List<string> noteList = new List<string>();        
         public Form1(EV3Messenger ev3)

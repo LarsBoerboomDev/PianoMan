@@ -52,16 +52,18 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(370, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(113, 23);
             this.button1.TabIndex = 1;
-            this.button1.Text = "startForm1";
+            this.button1.Text = "Start Pianoman";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // rescanPortsButton
             // 
+            this.rescanPortsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rescanPortsButton.Location = new System.Drawing.Point(133, 19);
             this.rescanPortsButton.Name = "rescanPortsButton";
             this.rescanPortsButton.Size = new System.Drawing.Size(75, 23);
@@ -72,6 +74,7 @@
             // 
             // disconnectPortButton
             // 
+            this.disconnectPortButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.disconnectPortButton.Location = new System.Drawing.Point(224, 46);
             this.disconnectPortButton.Name = "disconnectPortButton";
             this.disconnectPortButton.Size = new System.Drawing.Size(75, 23);
@@ -82,6 +85,7 @@
             // 
             // connectPortButton
             // 
+            this.connectPortButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.connectPortButton.Location = new System.Drawing.Point(224, 17);
             this.connectPortButton.Name = "connectPortButton";
             this.connectPortButton.Size = new System.Drawing.Size(75, 23);
@@ -114,6 +118,7 @@
             // 
             // sendArm1Button
             // 
+            this.sendArm1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sendArm1Button.Location = new System.Drawing.Point(43, 168);
             this.sendArm1Button.Name = "sendArm1Button";
             this.sendArm1Button.Size = new System.Drawing.Size(99, 23);
@@ -124,6 +129,7 @@
             // 
             // sendArm2Button
             // 
+            this.sendArm2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sendArm2Button.Location = new System.Drawing.Point(43, 197);
             this.sendArm2Button.Name = "sendArm2Button";
             this.sendArm2Button.Size = new System.Drawing.Size(99, 23);
@@ -134,6 +140,7 @@
             // 
             // sendArm3Button
             // 
+            this.sendArm3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sendArm3Button.Location = new System.Drawing.Point(43, 226);
             this.sendArm3Button.Name = "sendArm3Button";
             this.sendArm3Button.Size = new System.Drawing.Size(99, 23);
@@ -144,6 +151,7 @@
             // 
             // sendArm4Button
             // 
+            this.sendArm4Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sendArm4Button.Location = new System.Drawing.Point(43, 255);
             this.sendArm4Button.Name = "sendArm4Button";
             this.sendArm4Button.Size = new System.Drawing.Size(99, 23);
@@ -156,6 +164,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(692, 343);
             this.Controls.Add(this.sendArm4Button);
             this.Controls.Add(this.sendArm3Button);
@@ -163,8 +172,9 @@
             this.Controls.Add(this.sendArm1Button);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ConnectionForm";
-            this.Text = "ConnectionForm";
+            this.Text = "Robot connection";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
