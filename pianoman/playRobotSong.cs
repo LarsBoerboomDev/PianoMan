@@ -4,6 +4,7 @@ using EV3MessengerLib;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace pianoman
 {
@@ -11,7 +12,7 @@ namespace pianoman
     {
         EV3Messenger mindstorm;
 
-        public async void playSongAsync(EV3Messenger messenger, List<string> noteList)
+        public void playSongAsync(EV3Messenger messenger, List<string> noteList)
         {
             mindstorm = messenger;
             for (int i = 0; i < noteList.Count; i++)
@@ -19,7 +20,8 @@ namespace pianoman
                 string item = noteList[i];
                 string[] notes = item.Split(',');
                 int time = Convert.ToInt32(notes[1]) * 1000;
-                await Task.Delay(time);
+                //await Task.Delay(time);
+                Thread.Sleep(time);
                 sendNoteRobot(notes[0]);
             }
         }

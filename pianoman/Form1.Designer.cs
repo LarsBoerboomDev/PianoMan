@@ -76,7 +76,6 @@
             // 
             // timeNummeric
             // 
-            this.timeNummeric.Hexadecimal = true;
             this.timeNummeric.Location = new System.Drawing.Point(52, 40);
             this.timeNummeric.Name = "timeNummeric";
             this.timeNummeric.Size = new System.Drawing.Size(120, 20);
@@ -84,8 +83,16 @@
             // 
             // nootCombo
             // 
-            this.nootCombo.DataSource = this.listBox1.CustomTabOffsets;
             this.nootCombo.FormattingEnabled = true;
+            this.nootCombo.Items.AddRange(new object[] {
+            "G",
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G#"});
             this.nootCombo.Location = new System.Drawing.Point(51, 66);
             this.nootCombo.Name = "nootCombo";
             this.nootCombo.Size = new System.Drawing.Size(121, 21);

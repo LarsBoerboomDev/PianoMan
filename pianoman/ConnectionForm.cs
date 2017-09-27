@@ -104,7 +104,7 @@ namespace pianoman
         {
             if (eV3Messenger.IsConnected)
             {
-                eV3Messenger.SendMessage("Music", "arm1");
+                eV3Messenger.SendMessage("Music", "g");
             }
         }
 
@@ -112,7 +112,7 @@ namespace pianoman
         {
             if (eV3Messenger.IsConnected)
             {
-                eV3Messenger.SendMessage("Music", "arm2");
+                eV3Messenger.SendMessage("Music", "a");
             }
         }
 
@@ -120,7 +120,7 @@ namespace pianoman
         {
             if (eV3Messenger.IsConnected)
             {
-                eV3Messenger.SendMessage("Music", "arm3");
+                eV3Messenger.SendMessage("Music", "b");
             }
         }
 
@@ -128,7 +128,7 @@ namespace pianoman
         {
             if (eV3Messenger.IsConnected)
             {
-                eV3Messenger.SendMessage("Music", "arm4");                
+                eV3Messenger.SendMessage("Music", "c");                
             }
         }
     }

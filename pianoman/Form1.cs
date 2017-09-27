@@ -76,7 +76,7 @@ namespace pianoman
 
         private void playsongButton_Click(object sender, EventArgs e)
         {
-            List<string> noteList = new List<string>();            
+                    
             //play song on the computer
             playSound play = new playSound();
             fillNoteList();
@@ -92,7 +92,7 @@ namespace pianoman
         }
         private void fillNoteList()
         {
-            noteList.Clear();
+            
             foreach (var item in listBox1.Items)
             {
                 noteList.Add(item.ToString());
