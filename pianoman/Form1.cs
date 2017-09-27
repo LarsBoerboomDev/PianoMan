@@ -1,4 +1,5 @@
 ﻿using System;
+using EV3MessengerLib;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,20 +14,30 @@ namespace pianoman
     public partial class Form1 : Form
     {
 
+
+        private EV3Messenger mindstorm;
         public List<string> noteList = new List<string>();        
-        public Form1()
+        public Form1(EV3Messenger ev3)
         {
-            InitializeComponent();
+            mindstorm = ev3;
+            InitializeComponent();                              
         }
         
         private void addnoteButton_Click(object sender, EventArgs e)
         {
-           string noot = nootCombo.Text;
-           decimal time = timeNummeric.Value;
-           string note = noot + "," + time;
+            if (timeNummeric.Value == 0)
+            {
+                MessageBox.Show("Geen noot of tijd ingevuld");
+            }
+            else
+            {
+                string noot = nootCombo.Text;
+                decimal time = timeNummeric.Value;
+                string note = noot + "," + time;
 
-           noteList.Add(note);
-           fillMusicList();                            
+                noteList.Add(note);
+                fillMusicList();
+            }           
         }
 
         private void fillMusicList()
@@ -70,13 +81,24 @@ namespace pianoman
             List<string> noteList = new List<string>();            
             //play song on the computer
             playSound play = new playSound();
+            fillNoteList();
+            play.playMusic(noteList);
+        }
+
+
+        private void playSongRobot_Click(object sender, EventArgs e)
+        {
+            playRobotSong robot = new playRobotSong();
+            fillNoteList();            
+            robot.playSongAsync(mindstorm, noteList);
+        }
+        private void fillNoteList()
+        {
+            noteList.Clear();
             foreach (var item in listBox1.Items)
             {
                 noteList.Add(item.ToString());
             }
-            play.playMusic(noteList);
         }
-
-       
     }
 }

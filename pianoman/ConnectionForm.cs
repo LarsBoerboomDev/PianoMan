@@ -14,7 +14,7 @@ namespace pianoman
 {
     public partial class ConnectionForm : Form
     {
-        private EV3Messenger eV3Messenger;
+        public EV3Messenger eV3Messenger;
 
         private Timer messageReceiverTimer;
         public ConnectionForm()
@@ -48,7 +48,7 @@ namespace pianoman
         //just a test button to open form1 to be changed
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
+            Form1 form = new Form1(eV3Messenger);
             form.Show();
         }
 

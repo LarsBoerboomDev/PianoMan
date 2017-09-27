@@ -1,70 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using EV3MessengerLib;
 using System.Linq;
-using System.Media;
 using System.Text;
 using System.Threading.Tasks;
-using System.Timers;
 
 namespace pianoman
 {
-    class playSound
+    class playRobotSong
     {
-        string notes;
+        EV3Messenger mindstorm;
 
-
-        public async void playMusic(List<string> noteList)
-        {                        
+        public async void playSongAsync(EV3Messenger messenger, List<string> noteList)
+        {
+            mindstorm = messenger;
             for (int i = 0; i < noteList.Count; i++)
             {
                 string item = noteList[i];
                 string[] notes = item.Split(',');
                 int time = Convert.ToInt32(notes[1]) * 1000;
                 await Task.Delay(time);
-                playANote(notes[0]);
+                sendNoteRobot(notes[0]);
             }
+        }
 
-        }      
 
-        private void playANote(string noteType)
+        private void sendNoteRobot(string noteType)
         {
-            string soundFile = "";
             switch (noteType)
             {
                 case "G":
-                    soundFile = "highestG.wav";
+                    mindstorm.SendMessage("Music", "A");
                     break;
                 case "A":
-                    soundFile = "higherA.wav";
+                    mindstorm.SendMessage("Music", "b");
                     break;
                 case "B":
-                    soundFile = "higherB.wav";
+                    mindstorm.SendMessage("Music", "c");
                     break;
                 case "C":
-                    soundFile = "higherC.wav";
+                    mindstorm.SendMessage("Music", "d");
                     break;
                 case "D":
-                    soundFile = "higherD.wav";
+                    mindstorm.SendMessage("Music", "e");
                     break;
                 case "E":
-                    soundFile = "higherE.wav";
+                    mindstorm.SendMessage("Music", "f");
                     break;
                 case "F":
-                    soundFile = "higherF.wav";
+                    mindstorm.SendMessage("Music", "g");
                     break;
                 case "G#":
-                    soundFile = "higherG.wav";
+                    mindstorm.SendMessage("Music", "c#");
                     break;
                 default:
                     break;
             }
-            var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
-
-            SoundPlayer player = new SoundPlayer(path2);
-            player.Play();
         }
-             
     }
 }

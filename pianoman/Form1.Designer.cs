@@ -33,16 +33,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.timeNummeric = new System.Windows.Forms.NumericUpDown();
             this.nootCombo = new System.Windows.Forms.ComboBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.addnoteButton = new System.Windows.Forms.Button();
             this.removenoteButton = new System.Windows.Forms.Button();
             this.savesongButton = new System.Windows.Forms.Button();
             this.loadsongButton = new System.Windows.Forms.Button();
             this.clearsongButton = new System.Windows.Forms.Button();
             this.playsongButton = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.songNameTextbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.playSongRobot = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,23 +83,24 @@
             // 
             // nootCombo
             // 
+            this.nootCombo.DataSource = this.listBox1.CustomTabOffsets;
             this.nootCombo.FormattingEnabled = true;
-            this.nootCombo.Items.AddRange(new object[] {
-            "G",
-            "A",
-            "B",
-            "C",
-            "D",
-            "E",
-            "F",
-            "G#"});
             this.nootCombo.Location = new System.Drawing.Point(51, 66);
             this.nootCombo.Name = "nootCombo";
             this.nootCombo.Size = new System.Drawing.Size(121, 21);
             this.nootCombo.TabIndex = 4;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(325, 42);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(200, 264);
+            this.listBox1.TabIndex = 11;
+            // 
             // addnoteButton
             // 
+            this.addnoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addnoteButton.Location = new System.Drawing.Point(16, 138);
             this.addnoteButton.Name = "addnoteButton";
             this.addnoteButton.Size = new System.Drawing.Size(156, 23);
@@ -109,6 +111,7 @@
             // 
             // removenoteButton
             // 
+            this.removenoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.removenoteButton.Location = new System.Drawing.Point(16, 167);
             this.removenoteButton.Name = "removenoteButton";
             this.removenoteButton.Size = new System.Drawing.Size(156, 23);
@@ -119,6 +122,7 @@
             // 
             // savesongButton
             // 
+            this.savesongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.savesongButton.Location = new System.Drawing.Point(16, 196);
             this.savesongButton.Name = "savesongButton";
             this.savesongButton.Size = new System.Drawing.Size(156, 23);
@@ -129,6 +133,7 @@
             // 
             // loadsongButton
             // 
+            this.loadsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loadsongButton.Location = new System.Drawing.Point(16, 225);
             this.loadsongButton.Name = "loadsongButton";
             this.loadsongButton.Size = new System.Drawing.Size(156, 23);
@@ -139,6 +144,7 @@
             // 
             // clearsongButton
             // 
+            this.clearsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clearsongButton.Location = new System.Drawing.Point(16, 254);
             this.clearsongButton.Name = "clearsongButton";
             this.clearsongButton.Size = new System.Drawing.Size(156, 23);
@@ -149,26 +155,19 @@
             // 
             // playsongButton
             // 
+            this.playsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playsongButton.Location = new System.Drawing.Point(16, 283);
             this.playsongButton.Name = "playsongButton";
             this.playsongButton.Size = new System.Drawing.Size(156, 23);
             this.playsongButton.TabIndex = 10;
-            this.playsongButton.Text = "Play song";
+            this.playsongButton.Text = "Play song preview";
             this.playsongButton.UseVisualStyleBackColor = true;
             this.playsongButton.Click += new System.EventHandler(this.playsongButton_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(179, 40);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 225);
-            this.listBox1.TabIndex = 11;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(176, 13);
+            this.label4.Location = new System.Drawing.Point(322, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 12;
@@ -176,6 +175,7 @@
             // 
             // songNameTextbox
             // 
+            this.songNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.songNameTextbox.Location = new System.Drawing.Point(16, 112);
             this.songNameTextbox.Name = "songNameTextbox";
             this.songNameTextbox.Size = new System.Drawing.Size(156, 20);
@@ -190,11 +190,24 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "Songname";
             // 
+            // playSongRobot
+            // 
+            this.playSongRobot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.playSongRobot.Location = new System.Drawing.Point(16, 312);
+            this.playSongRobot.Name = "playSongRobot";
+            this.playSongRobot.Size = new System.Drawing.Size(156, 23);
+            this.playSongRobot.TabIndex = 15;
+            this.playSongRobot.Text = "Play song";
+            this.playSongRobot.UseVisualStyleBackColor = true;
+            this.playSongRobot.Click += new System.EventHandler(this.playSongRobot_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 332);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(629, 399);
+            this.Controls.Add(this.playSongRobot);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.songNameTextbox);
             this.Controls.Add(this.label4);
@@ -210,6 +223,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).EndInit();
@@ -235,6 +249,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox songNameTextbox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button playSongRobot;
     }
 }
 
