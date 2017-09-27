@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -12,18 +13,26 @@ namespace pianoman
     {
         string notes;
 
-        public void PlayNote(string note, string interval)
+
+        public async void playMusic(List<string> noteList)
         {
-            notes = note;
-            Timer time = new Timer();
-            time.Interval = Convert.ToInt32(interval);
-            time.Elapsed += new ElapsedEventHandler(timer_elapsed);
-            time.Enabled = true;
-        }
-        public void timer_elapsed(object sender , ElapsedEventArgs e)
+            Timer noteTimer = new Timer();
+            
+            for (int i = 0; i < noteList.Count; i++)
+            {
+                string item = noteList[i];
+                string[] notes = item.Split(',');
+                int time = Convert.ToInt32(notes[1]) * 1000;
+                await Task.Delay(time);
+                playANote(notes[0]);
+            }
+
+        }      
+
+        private void playANote(string noteType)
         {
             string soundFile = "";
-            switch (notes)
+            switch (noteType)
             {
                 case "G":
                     soundFile = "highestG.wav";
@@ -52,8 +61,12 @@ namespace pianoman
                 default:
                     break;
             }
-            SoundPlayer player = new SoundPlayer(@"\notes\" + soundFile);
+            var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+            string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
+
+            SoundPlayer player = new SoundPlayer(path2);
             player.Play();
         }
+             
     }
 }
