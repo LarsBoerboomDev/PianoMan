@@ -20,8 +20,8 @@ namespace pianoman
             {
                 string item = noteList[i];
                 string[] notes = item.Split(',');
-                int time = Convert.ToInt32(notes[1]) * 1000;
-                await Task.Delay(time);
+                Decimal time = Convert.ToDecimal(notes[1]) * 1000;
+                await Task.Delay(Convert.ToInt32(time));
                 playANote(notes[0]);
             }
         }      

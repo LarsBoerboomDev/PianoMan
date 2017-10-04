@@ -25,8 +25,8 @@ namespace pianoman
                 }
                 else
                 {
-                    int time = Convert.ToInt32(notes[1]) * 1000;
-                    Thread.Sleep(time);
+                    decimal time = Convert.ToDecimal(notes[1]) * 1000;
+                    Thread.Sleep(Convert.ToInt32(time));
                     sendNoteRobot(notes[0]);
                 }                
             }
