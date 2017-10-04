@@ -47,7 +47,7 @@
             "G",
             "A",
             "B",
-            "C#",
+            "C2",
             "RUST"});
             this.nootCombo.Location = new System.Drawing.Point(49, 38);
             this.nootCombo.Name = "nootCombo";

@@ -109,12 +109,28 @@ namespace pianoman
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {            
-            replaceForm replace = new replaceForm(listBox1.SelectedItem.ToString());
-            replace.ShowDialog();
-            string test = replace.note;
-            
+        {
+           
+               
         }
-        
+
+      
+        private void listBox1_DoubleClick(object sender, EventArgs e)
+        {
+            replaceForm replace = new replaceForm(listBox1.SelectedItem.ToString());
+            int index = listBox1.SelectedIndex;
+            replace.ShowDialog();
+            string note = replace.note;
+            listBox1.ClearSelected();
+            replaceNote(index, note);
+
+
+        }
+        private void replaceNote(int index, string note)
+        {
+            listBox1.Items[index] = note;
+
+        }
+
     }
 }

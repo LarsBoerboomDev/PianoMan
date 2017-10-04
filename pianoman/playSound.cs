@@ -52,7 +52,7 @@ namespace pianoman
                 case "B":
                     soundFile = "B.wav";
                     break;
-                case "C#":
+                case "C2":
                     soundFile = "C#.wav";
                     break;
                 case "RUST":
