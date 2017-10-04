@@ -98,38 +98,6 @@ namespace pianoman
             eV3Messenger.Disconnect();
             UpdateButtonsAndConnectionInfo();
             messageReceiverTimer.Stop();
-        }
-
-        private void sendArm1Button_Click(object sender, EventArgs e)
-        {
-            if (eV3Messenger.IsConnected)
-            {
-                eV3Messenger.SendMessage("Music", "g");
-            }
-        }
-
-        private void sendArm2Button_Click(object sender, EventArgs e)
-        {
-            if (eV3Messenger.IsConnected)
-            {
-                eV3Messenger.SendMessage("Music", "a");
-            }
-        }
-
-        private void sendArm3Button_Click(object sender, EventArgs e)
-        {
-            if (eV3Messenger.IsConnected)
-            {
-                eV3Messenger.SendMessage("Music", "b");
-            }
-        }
-
-        private void sendArm4Button_Click(object sender, EventArgs e)
-        {
-            if (eV3Messenger.IsConnected)
-            {
-                eV3Messenger.SendMessage("Music", "c");                
-            }
-        }
+        }      
     }
 }
