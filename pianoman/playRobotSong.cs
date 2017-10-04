@@ -23,9 +23,12 @@ namespace pianoman
                 {
                     break;
                 }
-                int time = Convert.ToInt32(notes[1]) * 1000;                
-                Thread.Sleep(time);
-                sendNoteRobot(notes[0]);
+                else
+                {
+                    int time = Convert.ToInt32(notes[1]) * 1000;
+                    Thread.Sleep(time);
+                    sendNoteRobot(notes[0]);
+                }                
             }
         }
 
