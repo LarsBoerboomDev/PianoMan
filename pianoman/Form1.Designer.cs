@@ -86,6 +86,11 @@
             this.timeNummeric.Name = "timeNummeric";
             this.timeNummeric.Size = new System.Drawing.Size(120, 20);
             this.timeNummeric.TabIndex = 3;
+            this.timeNummeric.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             // 
             // nootCombo
             // 
