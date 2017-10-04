@@ -31,28 +31,28 @@ namespace pianoman
         {
             switch (noteType)
             {
-                case "G":
-                    mindstorm.SendMessage("Music", "A");
-                    break;
-                case "A":
-                    mindstorm.SendMessage("Music", "b");
-                    break;
-                case "B":
+                case "C":
                     mindstorm.SendMessage("Music", "c");
                     break;
-                case "C":
+                case "D":
                     mindstorm.SendMessage("Music", "d");
                     break;
-                case "D":
+                case "E":
                     mindstorm.SendMessage("Music", "e");
                     break;
-                case "E":
+                case "F":
                     mindstorm.SendMessage("Music", "f");
                     break;
-                case "F":
+                case "G":
                     mindstorm.SendMessage("Music", "g");
                     break;
-                case "G#":
+                case "A":
+                    mindstorm.SendMessage("Music", "a");
+                    break;
+                case "B":
+                    mindstorm.SendMessage("Music", "b");
+                    break;
+                case "C#":
                     mindstorm.SendMessage("Music", "c#");
                     break;
                 default:

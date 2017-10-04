@@ -85,14 +85,13 @@
             // 
             this.nootCombo.FormattingEnabled = true;
             this.nootCombo.Items.AddRange(new object[] {
-            "G",
-            "A",
-            "B",
             "C",
             "D",
             "E",
             "F",
-            "G#"});
+            "G",
+            "AB",
+            "C#"});
             this.nootCombo.Location = new System.Drawing.Point(51, 66);
             this.nootCombo.Name = "nootCombo";
             this.nootCombo.Size = new System.Drawing.Size(121, 21);

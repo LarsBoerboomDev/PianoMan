@@ -24,7 +24,6 @@ namespace pianoman
                 await Task.Delay(time);
                 playANote(notes[0]);
             }
-
         }      
 
         private void playANote(string noteType)
@@ -32,29 +31,29 @@ namespace pianoman
             string soundFile = "";
             switch (noteType)
             {
-                case "G":
-                    soundFile = "highestG.wav";
-                    break;
-                case "A":
-                    soundFile = "higherA.wav";
-                    break;
-                case "B":
-                    soundFile = "higherB.wav";
-                    break;
                 case "C":
-                    soundFile = "higherC.wav";
+                    soundFile = "C.wav";
                     break;
                 case "D":
-                    soundFile = "higherD.wav";
+                    soundFile = "D.wav";
                     break;
                 case "E":
-                    soundFile = "higherE.wav";
+                    soundFile = "E.wav";
                     break;
                 case "F":
-                    soundFile = "higherF.wav";
+                    soundFile = "F.wav";
                     break;
-                case "G#":
-                    soundFile = "higherG.wav";
+                case "G":
+                    soundFile = "G.wav";
+                    break;
+                case "A":
+                    soundFile = "A.wav";
+                    break;
+                case "B":
+                    soundFile = "B.wav";
+                    break;
+                case "C#":
+                    soundFile = "C#.wav";
                     break;
                 default:
                     break;

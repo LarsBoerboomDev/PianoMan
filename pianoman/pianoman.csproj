@@ -97,14 +97,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Libarys\EV3MessengerLib.dll" />
-    <Content Include="notes\higherA.wav" />
-    <Content Include="notes\higherB.wav" />
-    <Content Include="notes\higherC.wav" />
-    <Content Include="notes\higherD.wav" />
-    <Content Include="notes\higherE.wav" />
-    <Content Include="notes\higherF.wav" />
-    <Content Include="notes\higherG.wav" />
-    <Content Include="notes\highestG.wav" />
+    <Content Include="notes2\higherA.wav" />
+    <Content Include="notes2\higherB.wav" />
+    <Content Include="notes2\higherC.wav" />
+    <Content Include="notes2\higherD.wav" />
+    <Content Include="notes2\higherE.wav" />
+    <Content Include="notes2\higherF.wav" />
+    <Content Include="notes2\higherG.wav" />
+    <Content Include="notes2\highestG.wav" />
+    <Content Include="notes\A.wav" />
+    <Content Include="notes\B.wav" />
+    <Content Include="notes\C#.wav" />
+    <Content Include="notes\C.wav" />
+    <Content Include="notes\D.wav" />
+    <Content Include="notes\E.wav" />
+    <Content Include="notes\F.wav" />
+    <Content Include="notes\G.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

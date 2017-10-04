@@ -88,7 +88,7 @@ namespace pianoman
         {
             playRobotSong robot = new playRobotSong();
             fillNoteList();            
-            robot.playSongAsync(mindstorm, noteList);
+            robot.playSongAsync (mindstorm, noteList);
         }
         private void fillNoteList()
         {
