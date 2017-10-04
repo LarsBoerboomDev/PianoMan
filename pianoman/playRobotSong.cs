@@ -19,7 +19,7 @@ namespace pianoman
             {
                 string item = noteList[i];
                 string[] notes = item.Split(',');
-                if(notes[1] == null)
+                if(notes[1] == "")
                 {
                     break;
                 }
