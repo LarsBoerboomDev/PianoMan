@@ -19,7 +19,7 @@ namespace pianoman
             for (int i = 0; i < noteList.Count; i++)
             {
                 string item = noteList[i];
-                string[] notes = item.Split(',');
+                string[] notes = item.Split('.');
                 Decimal time = Convert.ToDecimal(notes[1]) * 1000;
                 await Task.Delay(Convert.ToInt32(time));
                 playANote(notes[0]);
@@ -55,14 +55,24 @@ namespace pianoman
                 case "C#":
                     soundFile = "C#.wav";
                     break;
+                case "RUST":
+                    break;
                 default:
                     break;
             }
-            var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
+            
+            if(noteType == "RUST")
+            {
 
-            SoundPlayer player = new SoundPlayer(path2);
-            player.Play();
+            }
+            else
+            {
+                var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+                string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
+                SoundPlayer player = new SoundPlayer(path2);
+                player.Play();
+            }
+            
         }
              
     }

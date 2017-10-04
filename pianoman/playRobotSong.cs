@@ -61,6 +61,8 @@ namespace pianoman
                 case "C#":
                     mindstorm.SendMessage("Music", "c2");
                     break;
+                case "RUST":
+                    break;
                 default:
                     break;
             }
