@@ -14,7 +14,8 @@ namespace pianoman
     public partial class Form1 : Form
     {    
         private EV3Messenger mindstorm;
-        public List<string> noteList = new List<string>();        
+        public List<string> noteList = new List<string>();
+        private int toChangeIndex;        
         public Form1(EV3Messenger ev3)
         {
             mindstorm = ev3;
@@ -106,5 +107,14 @@ namespace pianoman
                 noteList.Add(item.ToString());
             }
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {            
+            replaceForm replace = new replaceForm(listBox1.SelectedItem.ToString());
+            replace.ShowDialog();
+            string test = replace.note;
+            
+        }
+        
     }
 }

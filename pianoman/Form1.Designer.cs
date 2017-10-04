@@ -96,7 +96,8 @@
             "E",
             "F",
             "G",
-            "AB",
+            "A",
+            "B",
             "C#"});
             this.nootCombo.Location = new System.Drawing.Point(51, 66);
             this.nootCombo.Name = "nootCombo";
@@ -110,6 +111,7 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(200, 290);
             this.listBox1.TabIndex = 11;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // addnoteButton
             // 
