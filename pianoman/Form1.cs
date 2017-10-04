@@ -84,8 +84,7 @@ namespace pianoman
         }
 
         private void playsongButton_Click(object sender, EventArgs e)
-        {
-                    
+        {                    
             //play song on the computer
             playSound play = new playSound();
             fillNoteList();
@@ -95,26 +94,21 @@ namespace pianoman
 
         private void playSongRobot_Click(object sender, EventArgs e)
         {
+            //play song on the robot
             playRobotSong robot = new playRobotSong();
             fillNoteList();            
             robot.playSongAsync (mindstorm, noteList);
         }
         private void fillNoteList()
-        {
-            
+        {            
+            clearNotelist();
             foreach (var item in listBox1.Items)
             {
                 noteList.Add(item.ToString());
             }
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
-               
-        }
-
-      
+        
+              
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
             replaceForm replace = new replaceForm(listBox1.SelectedItem.ToString());
@@ -123,14 +117,16 @@ namespace pianoman
             string note = replace.note;
             listBox1.ClearSelected();
             replaceNote(index, note);
-
-
         }
+
+        private void clearNotelist()
+        {
+            noteList.Clear();
+        }
+
         private void replaceNote(int index, string note)
         {
             listBox1.Items[index] = note;
-
         }
-
     }
 }
