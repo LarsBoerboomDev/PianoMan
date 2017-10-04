@@ -30,11 +30,12 @@ namespace pianoman
             }
             else
             {
+                /*
                 string noot = nootCombo.Text;
                 //decimal time = timeNummeric.Value;
-                string note = noot + "." + "0,5";
-
-                noteList.Add(note);
+                string note = noot;
+                */
+                noteList.Add(nootCombo.Text);
                 fillMusicList();
             }           
         }

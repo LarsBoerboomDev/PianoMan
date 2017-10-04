@@ -16,9 +16,19 @@ namespace pianoman
         {
             mindstorm = messenger;
             for (int i = 0; i < noteList.Count; i++)
-            {
+            {                
                 string item = noteList[i];
                 string[] notes = item.Split('.');
+                if (notes[0] == "RUST")
+                {
+                    
+                }
+                else
+                {
+                    item = item + ".0,5";
+                }
+                
+                
                 if(notes.Length == 1)
                 {
                     break;
