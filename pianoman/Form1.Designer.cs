@@ -76,6 +76,12 @@
             // 
             // timeNummeric
             // 
+            this.timeNummeric.DecimalPlaces = 1;
+            this.timeNummeric.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.timeNummeric.Location = new System.Drawing.Point(52, 40);
             this.timeNummeric.Name = "timeNummeric";
             this.timeNummeric.Size = new System.Drawing.Size(120, 20);
