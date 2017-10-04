@@ -19,8 +19,11 @@ namespace pianoman
             {
                 string item = noteList[i];
                 string[] notes = item.Split(',');
-                int time = Convert.ToInt32(notes[1]) * 1000;
-                //await Task.Delay(time);
+                if(notes[1] == null)
+                {
+                    break;
+                }
+                int time = Convert.ToInt32(notes[1]) * 1000;                
                 Thread.Sleep(time);
                 sendNoteRobot(notes[0]);
             }
@@ -53,7 +56,7 @@ namespace pianoman
                     mindstorm.SendMessage("Music", "b");
                     break;
                 case "C#":
-                    mindstorm.SendMessage("Music", "c#");
+                    mindstorm.SendMessage("Music", "c2");
                     break;
                 default:
                     break;
