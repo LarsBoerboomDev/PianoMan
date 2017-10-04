@@ -53,6 +53,7 @@
             this.nootCombo.Name = "nootCombo";
             this.nootCombo.Size = new System.Drawing.Size(121, 21);
             this.nootCombo.TabIndex = 8;
+            this.nootCombo.TextChanged += new System.EventHandler(this.nootCombo_TextChanged);
             // 
             // timeNummeric
             // 
@@ -105,7 +106,7 @@
             this.Controls.Add(this.timeNummeric);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "replaceForm";
             this.Text = "replaceForm";

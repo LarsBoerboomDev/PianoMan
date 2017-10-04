@@ -19,6 +19,10 @@ namespace pianoman
         {
             InitializeComponent();
             string[] notes = v.Split('.');
+            if(!(notes[0] == "RUST"))
+            {
+                timeNummeric.Enabled = false;
+            }
             timeNummeric.Value = Convert.ToDecimal(notes[1]);
             nootCombo.Text = notes[0];
 
@@ -28,6 +32,18 @@ namespace pianoman
         {
             note = nootCombo.Text + "." + timeNummeric.Value.ToString();
             Close();
+        }
+
+        private void nootCombo_TextChanged(object sender, EventArgs e)
+        {
+            if(nootCombo.Text == "RUST")
+            {
+                timeNummeric.Enabled = true;
+            }
+            else
+            {
+                timeNummeric.Enabled = false;
+            }
         }
     }
 }

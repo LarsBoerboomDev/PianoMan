@@ -44,6 +44,7 @@
             this.songNameTextbox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.playSongRobot = new System.Windows.Forms.Button();
+            this.intervalButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,9 +62,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Time:";
+            this.label2.Text = "Rust";
             // 
             // label3
             // 
@@ -84,7 +85,7 @@
             65536});
             this.timeNummeric.Location = new System.Drawing.Point(52, 73);
             this.timeNummeric.Name = "timeNummeric";
-            this.timeNummeric.Size = new System.Drawing.Size(120, 20);
+            this.timeNummeric.Size = new System.Drawing.Size(51, 20);
             this.timeNummeric.TabIndex = 3;
             this.timeNummeric.Value = new decimal(new int[] {
             5,
@@ -103,8 +104,7 @@
             "G",
             "A",
             "B",
-            "C2",
-            "RUST"});
+            "C2"});
             this.nootCombo.Location = new System.Drawing.Point(52, 46);
             this.nootCombo.Name = "nootCombo";
             this.nootCombo.Size = new System.Drawing.Size(121, 21);
@@ -117,7 +117,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(200, 290);
             this.listBox1.TabIndex = 11;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
             // addnoteButton
@@ -223,12 +222,24 @@
             this.playSongRobot.UseVisualStyleBackColor = true;
             this.playSongRobot.Click += new System.EventHandler(this.playSongRobot_Click);
             // 
+            // intervalButton
+            // 
+            this.intervalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.intervalButton.Location = new System.Drawing.Point(109, 73);
+            this.intervalButton.Name = "intervalButton";
+            this.intervalButton.Size = new System.Drawing.Size(64, 23);
+            this.intervalButton.TabIndex = 16;
+            this.intervalButton.Text = "Add rust";
+            this.intervalButton.UseVisualStyleBackColor = true;
+            this.intervalButton.Click += new System.EventHandler(this.intervalButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(629, 399);
+            this.Controls.Add(this.intervalButton);
             this.Controls.Add(this.playSongRobot);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.songNameTextbox);
@@ -272,6 +283,7 @@
         private System.Windows.Forms.TextBox songNameTextbox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button playSongRobot;
+        private System.Windows.Forms.Button intervalButton;
     }
 }
 

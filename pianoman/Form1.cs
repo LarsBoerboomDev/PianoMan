@@ -31,8 +31,8 @@ namespace pianoman
             else
             {
                 string noot = nootCombo.Text;
-                decimal time = timeNummeric.Value;
-                string note = noot + "." + time;
+                //decimal time = timeNummeric.Value;
+                string note = noot + "." + "0,5";
 
                 noteList.Add(note);
                 fillMusicList();
@@ -56,6 +56,7 @@ namespace pianoman
         private void clearsongButton_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
+            noteList.Clear();
         }
 
         private void removenoteButton_Click(object sender, EventArgs e)
@@ -69,8 +70,7 @@ namespace pianoman
             {
                 noteList.RemoveAt(deletedNote);
                 fillMusicList();
-            }
-            
+            }            
         }
 
         private void loadsongButton_Click(object sender, EventArgs e)
@@ -127,6 +127,20 @@ namespace pianoman
         private void replaceNote(int index, string note)
         {
             listBox1.Items[index] = note;
+        }
+
+        private void intervalButton_Click(object sender, EventArgs e)
+        {
+            if(timeNummeric.Value == 0)
+            {
+                MessageBox.Show("Geen tijd ingevuld");
+            }
+            else
+            {
+                string note = "RUST." + timeNummeric.Value.ToString();
+                noteList.Add(note);
+                fillMusicList();
+            }
         }
     }
 }
