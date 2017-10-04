@@ -31,7 +31,7 @@ namespace pianoman
                 
                 if(notes.Length == 1)
                 {
-                    break;
+                    
                 }
                 else
                 {

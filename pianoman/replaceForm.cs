@@ -30,6 +30,7 @@ namespace pianoman
 
         private void replaceButton_Click(object sender, EventArgs e)
         {
+            
             note = nootCombo.Text + "." + timeNummeric.Value.ToString();
             Close();
         }
