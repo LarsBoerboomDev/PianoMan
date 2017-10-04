@@ -27,15 +27,15 @@ namespace pianoman
                 {
                     item = item + ".0,5";
                 }
+                string[] notes2 = item.Split('.');
                 
-                
-                if(notes.Length == 1)
+                if(notes2.Length == 1)
                 {
                     
                 }
                 else
                 {
-                    decimal time = Convert.ToDecimal(notes[1]) * 1000;
+                    decimal time = Convert.ToDecimal(notes2[1]) * 1000;
                     Thread.Sleep(Convert.ToInt32(time));
                     sendNoteRobot(notes[0]);
                 }                
