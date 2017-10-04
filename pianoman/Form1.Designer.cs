@@ -59,7 +59,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 42);
+            this.label2.Location = new System.Drawing.Point(13, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 13);
             this.label2.TabIndex = 1;
@@ -68,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 66);
+            this.label3.Location = new System.Drawing.Point(13, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 2;
@@ -82,7 +82,7 @@
             0,
             0,
             65536});
-            this.timeNummeric.Location = new System.Drawing.Point(52, 40);
+            this.timeNummeric.Location = new System.Drawing.Point(52, 73);
             this.timeNummeric.Name = "timeNummeric";
             this.timeNummeric.Size = new System.Drawing.Size(120, 20);
             this.timeNummeric.TabIndex = 3;
@@ -100,7 +100,7 @@
             "B",
             "C2",
             "RUST"});
-            this.nootCombo.Location = new System.Drawing.Point(51, 66);
+            this.nootCombo.Location = new System.Drawing.Point(52, 46);
             this.nootCombo.Name = "nootCombo";
             this.nootCombo.Size = new System.Drawing.Size(121, 21);
             this.nootCombo.TabIndex = 4;
