@@ -18,7 +18,7 @@ namespace pianoman
             for (int i = 0; i < noteList.Count; i++)
             {
                 string item = noteList[i];
-                string[] notes = item.Split(',');
+                string[] notes = item.Split('.');
                 if(notes.Length == 1)
                 {
                     break;

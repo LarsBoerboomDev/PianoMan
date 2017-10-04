@@ -31,7 +31,7 @@ namespace pianoman
             {
                 string noot = nootCombo.Text;
                 decimal time = timeNummeric.Value;
-                string note = noot + "," + time;
+                string note = noot + "." + time;
 
                 noteList.Add(note);
                 fillMusicList();
@@ -60,8 +60,16 @@ namespace pianoman
         private void removenoteButton_Click(object sender, EventArgs e)
         {
             int deletedNote = listBox1.SelectedIndex;
-            noteList.RemoveAt(deletedNote);            
-            fillMusicList();
+            if(deletedNote < 0)
+            {
+
+            }
+            else
+            {
+                noteList.RemoveAt(deletedNote);
+                fillMusicList();
+            }
+            
         }
 
         private void loadsongButton_Click(object sender, EventArgs e)
