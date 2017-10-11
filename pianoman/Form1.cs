@@ -52,7 +52,7 @@ namespace pianoman
                             }
                         }
                         playRobotSong play = new playRobotSong();
-                        play.playSongAsync(noteList);
+                        play.playSongAsync(mindstorm , noteList);                        
                         
                     }
                 }

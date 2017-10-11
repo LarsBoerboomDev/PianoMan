@@ -77,5 +77,10 @@ namespace pianoman
                     break;
             }
         }
+
+        internal void playSongAsync(List<string> noteList)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
