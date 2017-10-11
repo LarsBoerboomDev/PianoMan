@@ -24,6 +24,7 @@ namespace pianoman
             timer = new Timer();
             timer.Interval = 10;
             timer.Tick += new System.EventHandler(timer_Tick);
+            timer.Enabled = true;
             InitializeComponent();                              
         }
         private void timer_Tick(object sender, EventArgs e)
