@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace pianoman
 {
@@ -15,13 +16,40 @@ namespace pianoman
     {    
         private EV3Messenger mindstorm;
         public List<string> noteList = new List<string>();
-        private int toChangeIndex;        
+        private int toChangeIndex;
+        private Timer timer;     
         public Form1(EV3Messenger ev3)
         {
             mindstorm = ev3;
+            timer = new Timer();
+            timer.Interval = 10;
+            timer.Tick += new System.EventHandler(timer_Tick);
             InitializeComponent();                              
         }
-        
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            if (mindstorm.IsConnected)
+            {
+                EV3Message message = mindstorm.ReadMessage();
+                if(message.MailboxTitle == "Demo")
+                {
+                    loadSong load = new loadSong();
+                    //string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
+                    var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+                    string path = Path.Combine(projectFolder, @"demoSongs");
+                    DirectoryInfo d = new DirectoryInfo(path);
+                    noteList.Clear();
+                    foreach (var file in d.GetFiles("*.txt"))
+                    {
+                         load.readSong(file.DirectoryName);
+                        foreach (var item in load.readSong(file.DirectoryName))
+                        {
+                            noteList.Add(item);
+                        }
+                    }
+                }
+            }
+        }
         private void addnoteButton_Click(object sender, EventArgs e)
         {
             if (timeNummeric.Value == 0)

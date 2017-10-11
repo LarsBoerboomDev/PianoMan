@@ -55,6 +55,7 @@
     <Compile Include="ConnectionForm.Designer.cs">
       <DependentUpon>ConnectionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="demoMode.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +123,10 @@
     <Content Include="notes\E.wav" />
     <Content Include="notes\F.wav" />
     <Content Include="notes\G.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="demoSongs\" />
+    <Folder Include="songs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
