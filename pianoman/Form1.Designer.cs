@@ -109,6 +109,7 @@
             this.nootCombo.Name = "nootCombo";
             this.nootCombo.Size = new System.Drawing.Size(121, 21);
             this.nootCombo.TabIndex = 4;
+            this.nootCombo.Text = "C";
             // 
             // listBox1
             // 

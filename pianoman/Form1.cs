@@ -20,6 +20,7 @@ namespace pianoman
         private Timer timer;     
         public Form1(EV3Messenger ev3)
         {
+            
             mindstorm = ev3;
             timer = new Timer();
             timer.Interval = 10;
