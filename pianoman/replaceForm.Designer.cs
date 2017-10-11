@@ -64,9 +64,19 @@
             0,
             65536});
             this.timeNummeric.Location = new System.Drawing.Point(50, 12);
+            this.timeNummeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.timeNummeric.Name = "timeNummeric";
             this.timeNummeric.Size = new System.Drawing.Size(120, 20);
             this.timeNummeric.TabIndex = 7;
+            this.timeNummeric.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             // 
             // label3
             // 

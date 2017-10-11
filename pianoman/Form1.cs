@@ -20,6 +20,7 @@ namespace pianoman
         private Timer timer;     
         public Form1(EV3Messenger ev3)
         {
+            
             mindstorm = ev3;
             timer = new Timer();
             timer.Interval = 10;
@@ -118,6 +119,7 @@ namespace pianoman
             {                
                 listBox1.Items.Add(item);
             }
+            fillNoteList();
         }
 
         private void playsongButton_Click(object sender, EventArgs e)
@@ -135,6 +137,8 @@ namespace pianoman
             playRobotSong robot = new playRobotSong();
             fillNoteList();            
             robot.playSongAsync (mindstorm, noteList);
+            Task.Delay(500);
+            mindstorm.SendMessage("Music", "Finished");
         }
         private void fillNoteList()
         {            
@@ -163,7 +167,8 @@ namespace pianoman
 
         private void replaceNote(int index, string note)
         {
-            listBox1.Items[index] = note;
+            noteList[index] = note;
+            fillMusicList();
         }
 
         private void intervalButton_Click(object sender, EventArgs e)
