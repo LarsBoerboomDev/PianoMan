@@ -32,24 +32,27 @@ namespace pianoman
             if (mindstorm.IsConnected)
             {
                 EV3Message message = mindstorm.ReadMessage();
-                if(message.MailboxTitle == "Demo")
+                if (message != null)
                 {
-                    loadSong load = new loadSong();
-                    //string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
-                    var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-                    string path = Path.Combine(projectFolder, @"demoSongs");
-                    DirectoryInfo d = new DirectoryInfo(path);
-                    noteList.Clear();
-                    foreach (var file in d.GetFiles("*.txt"))
+                    if (message.MailboxTitle == "Demo")
                     {
-                         load.readSong(file.DirectoryName);
-                        foreach (var item in load.readSong(file.DirectoryName))
+                        loadSong load = new loadSong();
+                        //string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
+                        var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+                        string path = Path.Combine(projectFolder, @"demoSongs");
+                        DirectoryInfo d = new DirectoryInfo(path);
+                        noteList.Clear();
+                        foreach (var file in d.GetFiles("*.txt"))
                         {
-                            noteList.Add(item);
+                            load.readSong(file.DirectoryName);
+                            foreach (var item in load.readSong(file.DirectoryName))
+                            {
+                                noteList.Add(item);
+                            }
                         }
+                        playSound play = new playSound();
+                        play.playMusic(noteList);
                     }
-                    playSound play = new playSound();
-                    play.playMusic(noteList);
                 }
             }
         }
