@@ -65,7 +65,7 @@
             65536});
             this.timeNummeric.Location = new System.Drawing.Point(50, 12);
             this.timeNummeric.Minimum = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             65536});

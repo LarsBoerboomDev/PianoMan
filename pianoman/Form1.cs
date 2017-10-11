@@ -119,6 +119,7 @@ namespace pianoman
             {                
                 listBox1.Items.Add(item);
             }
+            fillNoteList();
         }
 
         private void playsongButton_Click(object sender, EventArgs e)
