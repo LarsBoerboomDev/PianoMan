@@ -40,6 +40,7 @@ namespace pianoman
                     sendNoteRobot(notes[0]);
                 }                
             }
+            mindstorm.SendMessage("Music", "Finished");
         }
 
 
