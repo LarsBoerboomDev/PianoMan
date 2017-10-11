@@ -178,27 +178,6 @@ namespace pianoman
                 noteList.Add(note);
                 fillMusicList();
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            loadSong load = new loadSong();
-            //string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
-            var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-            string path = Path.Combine(projectFolder, @"demoSongs\");
-            DirectoryInfo d = new DirectoryInfo(path);
-            noteList.Clear();
-            foreach (var file in d.GetFiles("*.txt"))
-            {
-                Console.WriteLine(file.FullName);
-                load.readSong(file.FullName);
-                foreach (var item in load.readSong(file.FullName))
-                {
-                    noteList.Add(item);
-                }
-            }
-            playSound play = new playSound();
-            play.playMusic(noteList);
-        }
+        }        
     }
 }
