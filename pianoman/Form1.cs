@@ -51,8 +51,9 @@ namespace pianoman
                                 noteList.Add(item);
                             }
                         }
-                        playSound play = new playSound();
-                        play.playMusic(noteList);
+                        playRobotSong play = new playRobotSong();
+                        play.playSongAsync(noteList);
+                        
                     }
                 }
             }
