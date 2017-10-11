@@ -22,16 +22,28 @@ namespace pianoman
             if(!(notes[0] == "RUST"))
             {
                 timeNummeric.Enabled = false;
+                
             }
-            timeNummeric.Value = Convert.ToDecimal(notes[1]);
+            else
+            {
+                timeNummeric.Value = Convert.ToDecimal(notes[1]);
+            }
+            
             nootCombo.Text = notes[0];
 
         }
 
         private void replaceButton_Click(object sender, EventArgs e)
         {
+            if(nootCombo.Text == "RUST")
+            {
+                note = nootCombo.Text + "." + timeNummeric.Value.ToString();
+            }
+            else
+            {
+                note = nootCombo.Text;
+            }
             
-            note = nootCombo.Text + "." + timeNummeric.Value.ToString();
             Close();
         }
 

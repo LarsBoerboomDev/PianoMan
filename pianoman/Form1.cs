@@ -135,6 +135,7 @@ namespace pianoman
             playRobotSong robot = new playRobotSong();
             fillNoteList();            
             robot.playSongAsync (mindstorm, noteList);
+            mindstorm.SendMessage("Music", "Finished");
         }
         private void fillNoteList()
         {            
@@ -163,7 +164,8 @@ namespace pianoman
 
         private void replaceNote(int index, string note)
         {
-            listBox1.Items[index] = note;
+            noteList[index] = note;
+            fillMusicList();
         }
 
         private void intervalButton_Click(object sender, EventArgs e)

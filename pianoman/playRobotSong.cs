@@ -39,8 +39,7 @@ namespace pianoman
                     Thread.Sleep(Convert.ToInt32(time));
                     sendNoteRobot(notes[0]);
                 }                
-            }
-            mindstorm.SendMessage("Music", "Finished");
+            }            
         }
 
 
