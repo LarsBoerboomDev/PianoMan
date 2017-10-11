@@ -135,6 +135,7 @@ namespace pianoman
             playRobotSong robot = new playRobotSong();
             fillNoteList();            
             robot.playSongAsync (mindstorm, noteList);
+            Task.Delay(500);
             mindstorm.SendMessage("Music", "Finished");
         }
         private void fillNoteList()
