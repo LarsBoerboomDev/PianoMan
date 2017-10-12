@@ -17,6 +17,7 @@ namespace pianoman
 
         public replaceForm(string v)
         {
+
             InitializeComponent();
             string[] notes = v.Split('.');
             if(!(notes[0] == "RUST"))

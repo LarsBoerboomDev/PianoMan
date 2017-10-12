@@ -10,6 +10,7 @@ namespace pianoman
 {
     class writeToTXT
     {
+        //writes a list to a txt file
         public writeToTXT(List<string> noteList, string songName)
         {
             SaveFileDialog save = new SaveFileDialog();

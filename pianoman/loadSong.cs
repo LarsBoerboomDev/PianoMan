@@ -12,6 +12,7 @@ namespace pianoman
     {                
         public List<string> loadASong()
         {
+            //Opens the filedialog to open a txt file and loads in in a list that then returns it.
             List<string> notes = new List<string>();
             OpenFileDialog dialog = new OpenFileDialog();
             string line = "";
@@ -30,6 +31,7 @@ namespace pianoman
             return notes;
         }
 
+        //returns a list with the notes from a song in the demo folder
         public List<string> readSong(string fileName)
         {
             List<string> notes = new List<string>();

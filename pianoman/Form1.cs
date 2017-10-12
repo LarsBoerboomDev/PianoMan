@@ -19,8 +19,7 @@ namespace pianoman
         private int toChangeIndex;
         private Timer timer;     
         public Form1(EV3Messenger ev3)
-        {
-            
+        {            
             mindstorm = ev3;
             timer = new Timer();
             timer.Interval = 10;
@@ -30,6 +29,8 @@ namespace pianoman
         }
         private void timer_Tick(object sender, EventArgs e)
         {
+            //the timer tick method keeps checking of the demo button is pushed 
+            //if button is pushed it puts all the songs from the demoSongs folder in a list and sends it to the robot
             if (mindstorm.IsConnected)
             {
                 EV3Message message = mindstorm.ReadMessage();
@@ -146,6 +147,7 @@ namespace pianoman
               
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
+            //when a note is dubble clicked open the replaceForm
             replaceForm replace = new replaceForm(listBox1.SelectedItem.ToString());
             int index = listBox1.SelectedIndex;
             replace.ShowDialog();

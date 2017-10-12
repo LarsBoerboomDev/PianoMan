@@ -20,7 +20,17 @@ namespace pianoman
             {
                 string item = noteList[i];
                 string[] notes = item.Split('.');
+                if(notes[0] == "RUST")
+                {
+
+                }
+                else
+                {
+                    item = item + ".0,5";
+                }
+                notes = item.Split('.');
                 Decimal time = Convert.ToDecimal(notes[1]) * 1000;
+
                 await Task.Delay(Convert.ToInt32(time));
                 playANote(notes[0]);
             }
