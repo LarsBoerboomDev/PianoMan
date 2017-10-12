@@ -63,7 +63,7 @@ namespace pianoman
                     soundFile = "B.wav";
                     break;
                 case "C2":
-                    soundFile = "C#.wav";
+                    soundFile = "C2.wav";
                     break;
                 case "RUST":
                     break;
@@ -78,7 +78,7 @@ namespace pianoman
             else
             {
                 var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
-                string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
+                string path2 = Path.Combine(projectFolder, @"notes2\" + soundFile);
                 SoundPlayer player = new SoundPlayer(path2);
                 player.Play();
             }
