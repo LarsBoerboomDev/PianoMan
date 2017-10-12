@@ -61,14 +61,18 @@ namespace pianoman
         }
         private void addnoteButton_Click(object sender, EventArgs e)
         {
-            if (timeNummeric.Value == 0)
+            if(nootCombo.Text == "C" || nootCombo.Text == "D" || nootCombo.Text == "E" ||
+                nootCombo.Text == "F" || nootCombo.Text == "G" || nootCombo.Text == "A" ||
+                nootCombo.Text == "B" || nootCombo.Text == "C2" )
             {
-                MessageBox.Show("Geen noot of tijd ingevuld");
+                noteList.Add(nootCombo.Text);
+                fillMusicList();
             }
             else
             {                
-                noteList.Add(nootCombo.Text);
-                fillMusicList();
+                
+                nootCombo.Text = "C";
+                MessageBox.Show("Geen valide noot");
             }           
         }
 
