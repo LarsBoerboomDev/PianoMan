@@ -37,8 +37,7 @@ namespace pianoman
                 {
                     if (message.MailboxTitle == "Demo")
                     {
-                        loadSong load = new loadSong();
-                        //string path2 = Path.Combine(projectFolder, @"notes\" + soundFile);
+                        loadSong load = new loadSong();                        
                         var projectFolder = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
                         string path = Path.Combine(projectFolder, @"demoSongs\");
                         DirectoryInfo d = new DirectoryInfo(path);
@@ -66,12 +65,7 @@ namespace pianoman
                 MessageBox.Show("Geen noot of tijd ingevuld");
             }
             else
-            {
-                /*
-                string noot = nootCombo.Text;
-                //decimal time = timeNummeric.Value;
-                string note = noot;
-                */
+            {                
                 noteList.Add(nootCombo.Text);
                 fillMusicList();
             }           
@@ -102,7 +96,6 @@ namespace pianoman
             int deletedNote = listBox1.SelectedIndex;
             if(deletedNote < 0)
             {
-
             }
             else
             {
@@ -137,8 +130,9 @@ namespace pianoman
             playRobotSong robot = new playRobotSong();
             fillNoteList();            
             robot.playSongAsync (mindstorm, noteList);
-            Task.Delay(500);
+            Task.Delay(1000);
             mindstorm.SendMessage("Music", "Finished");
+            
         }
         private void fillNoteList()
         {            
