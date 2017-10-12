@@ -1,0 +1,15 @@
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\bin\Debug\PianomanWPF.exe.config
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\bin\Debug\PianomanWPF.exe
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\bin\Debug\PianomanWPF.pdb
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF.csprojResolveAssemblyReference.cache
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\MainWindow.g.cs
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\App.g.cs
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF_MarkupCompile.cache
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF_MarkupCompile.lref
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\MainWindow.baml
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF.g.resources
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF.Properties.Resources.resources
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF.csproj.GenerateResource.Cache
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF.csproj.CoreCompileInputs.cache
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF.exe
+D:\Users\robbe\Source\Repos\PianomanWPF\PianomanWPF\obj\Debug\PianomanWPF.pdb
