@@ -106,14 +106,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Libarys\EV3MessengerLib.dll" />
-    <Content Include="notes2\higherA.wav" />
-    <Content Include="notes2\higherB.wav" />
-    <Content Include="notes2\higherC.wav" />
-    <Content Include="notes2\higherD.wav" />
-    <Content Include="notes2\higherE.wav" />
-    <Content Include="notes2\higherF.wav" />
-    <Content Include="notes2\higherG.wav" />
-    <Content Include="notes2\highestG.wav" />
+    <Content Include="notes2\A.wav" />
+    <Content Include="notes2\B.wav" />
+    <Content Include="notes2\C.wav" />
+    <Content Include="notes2\C2.wav" />
+    <Content Include="notes2\D.wav" />
+    <Content Include="notes2\E.wav" />
+    <Content Include="notes2\F.wav" />
+    <Content Include="notes2\G.wav" />
     <Content Include="notes\A.wav" />
     <Content Include="notes\B.wav" />
     <Content Include="notes\C#.wav" />
