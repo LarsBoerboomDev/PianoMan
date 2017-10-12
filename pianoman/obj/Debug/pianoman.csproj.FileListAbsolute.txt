@@ -1,0 +1,13 @@
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\bin\Debug\pianoman.exe.config
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\bin\Debug\pianoman.exe
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\bin\Debug\pianoman.pdb
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\bin\Debug\EV3MessengerLib.dll
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.csprojResolveAssemblyReference.cache
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.ConnectionForm.resources
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.Form1.resources
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.Properties.Resources.resources
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.replaceForm.resources
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.csproj.GenerateResource.Cache
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.csproj.CoreCompileInputs.cache
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.exe
+D:\Users\robbe\Source\Repos\PianoMan\pianoman\obj\Debug\pianoman.pdb
