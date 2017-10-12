@@ -31,7 +31,7 @@ namespace pianoman
                 
                 if(notes2.Length == 1)
                 {
-                    
+
                 }
                 else
                 {
@@ -39,7 +39,10 @@ namespace pianoman
                     Thread.Sleep(Convert.ToInt32(time));
                     sendNoteRobot(notes[0]);
                 }                
-            }            
+            }
+
+            Thread.Sleep(1000);
+            messenger.SendMessage("Music", "Finished");
         }
 
 
