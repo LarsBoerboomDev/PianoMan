@@ -77,7 +77,7 @@
             // 
             // timeNummeric
             // 
-            this.timeNummeric.DecimalPlaces = 1;
+            this.timeNummeric.DecimalPlaces = 2;
             this.timeNummeric.Increment = new decimal(new int[] {
             1,
             0,
