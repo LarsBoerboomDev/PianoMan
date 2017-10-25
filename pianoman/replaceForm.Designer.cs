@@ -38,6 +38,7 @@
             // 
             // nootCombo
             // 
+            this.nootCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nootCombo.FormattingEnabled = true;
             this.nootCombo.Items.AddRange(new object[] {
             "C",
@@ -49,28 +50,29 @@
             "B",
             "C2",
             "RUST"});
-            this.nootCombo.Location = new System.Drawing.Point(49, 38);
+            this.nootCombo.Location = new System.Drawing.Point(73, 69);
             this.nootCombo.Name = "nootCombo";
-            this.nootCombo.Size = new System.Drawing.Size(121, 21);
+            this.nootCombo.Size = new System.Drawing.Size(121, 32);
             this.nootCombo.TabIndex = 8;
             this.nootCombo.TextChanged += new System.EventHandler(this.nootCombo_TextChanged);
             // 
             // timeNummeric
             // 
             this.timeNummeric.DecimalPlaces = 1;
+            this.timeNummeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.timeNummeric.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.timeNummeric.Location = new System.Drawing.Point(50, 12);
+            this.timeNummeric.Location = new System.Drawing.Point(73, 12);
             this.timeNummeric.Minimum = new decimal(new int[] {
-            1,
+            5,
             0,
             0,
             65536});
             this.timeNummeric.Name = "timeNummeric";
-            this.timeNummeric.Size = new System.Drawing.Size(120, 20);
+            this.timeNummeric.Size = new System.Drawing.Size(120, 29);
             this.timeNummeric.TabIndex = 7;
             this.timeNummeric.Value = new decimal(new int[] {
             5,
@@ -81,36 +83,43 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 38);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.Size = new System.Drawing.Size(55, 24);
             this.label3.TabIndex = 6;
             this.label3.Text = "Note:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(11, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 13);
+            this.label2.Size = new System.Drawing.Size(58, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "Time:";
             // 
             // replaceButton
             // 
-            this.replaceButton.Location = new System.Drawing.Point(50, 74);
+            this.replaceButton.BackColor = System.Drawing.SystemColors.Highlight;
+            this.replaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.replaceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.replaceButton.ForeColor = System.Drawing.Color.White;
+            this.replaceButton.Location = new System.Drawing.Point(14, 110);
             this.replaceButton.Name = "replaceButton";
-            this.replaceButton.Size = new System.Drawing.Size(75, 23);
+            this.replaceButton.Size = new System.Drawing.Size(179, 57);
             this.replaceButton.TabIndex = 9;
-            this.replaceButton.Text = "Replace";
-            this.replaceButton.UseVisualStyleBackColor = true;
+            this.replaceButton.Text = "Vervang";
+            this.replaceButton.UseVisualStyleBackColor = false;
             this.replaceButton.Click += new System.EventHandler(this.replaceButton_Click);
             // 
             // replaceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(206, 117);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(294, 206);
             this.Controls.Add(this.replaceButton);
             this.Controls.Add(this.nootCombo);
             this.Controls.Add(this.timeNummeric);
