@@ -51,41 +51,52 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(97, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(92, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add note:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 75);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(40, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.Size = new System.Drawing.Size(47, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Rust";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 46);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(97, 52);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 13);
+            this.label3.Size = new System.Drawing.Size(55, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Note:";
             // 
             // timeNummeric
             // 
+            this.timeNummeric.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.timeNummeric.DecimalPlaces = 2;
+            this.timeNummeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.timeNummeric.ForeColor = System.Drawing.SystemColors.WindowText;
             this.timeNummeric.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.timeNummeric.Location = new System.Drawing.Point(52, 73);
+            this.timeNummeric.Location = new System.Drawing.Point(93, 100);
+            this.timeNummeric.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
             this.timeNummeric.Name = "timeNummeric";
-            this.timeNummeric.Size = new System.Drawing.Size(51, 20);
+            this.timeNummeric.Size = new System.Drawing.Size(70, 29);
             this.timeNummeric.TabIndex = 3;
             this.timeNummeric.Value = new decimal(new int[] {
             5,
@@ -95,6 +106,7 @@
             // 
             // nootCombo
             // 
+            this.nootCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nootCombo.FormattingEnabled = true;
             this.nootCombo.Items.AddRange(new object[] {
             "C",
@@ -105,132 +117,161 @@
             "A",
             "B",
             "C2"});
-            this.nootCombo.Location = new System.Drawing.Point(52, 46);
+            this.nootCombo.Location = new System.Drawing.Point(169, 49);
             this.nootCombo.Name = "nootCombo";
-            this.nootCombo.Size = new System.Drawing.Size(121, 21);
+            this.nootCombo.Size = new System.Drawing.Size(156, 32);
             this.nootCombo.TabIndex = 4;
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(325, 42);
+            this.listBox1.ItemHeight = 24;
+            this.listBox1.Location = new System.Drawing.Point(400, 52);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(200, 290);
+            this.listBox1.Size = new System.Drawing.Size(235, 628);
             this.listBox1.TabIndex = 11;
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
             // addnoteButton
             // 
+            this.addnoteButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.addnoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addnoteButton.Location = new System.Drawing.Point(16, 138);
+            this.addnoteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addnoteButton.ForeColor = System.Drawing.Color.White;
+            this.addnoteButton.Location = new System.Drawing.Point(93, 220);
             this.addnoteButton.Name = "addnoteButton";
-            this.addnoteButton.Size = new System.Drawing.Size(156, 23);
+            this.addnoteButton.Size = new System.Drawing.Size(200, 61);
             this.addnoteButton.TabIndex = 5;
             this.addnoteButton.Text = "Add note";
-            this.addnoteButton.UseVisualStyleBackColor = true;
+            this.addnoteButton.UseVisualStyleBackColor = false;
             this.addnoteButton.Click += new System.EventHandler(this.addnoteButton_Click);
             // 
             // removenoteButton
             // 
+            this.removenoteButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.removenoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removenoteButton.Location = new System.Drawing.Point(16, 167);
+            this.removenoteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.removenoteButton.ForeColor = System.Drawing.Color.White;
+            this.removenoteButton.Location = new System.Drawing.Point(93, 287);
             this.removenoteButton.Name = "removenoteButton";
-            this.removenoteButton.Size = new System.Drawing.Size(156, 23);
+            this.removenoteButton.Size = new System.Drawing.Size(200, 61);
             this.removenoteButton.TabIndex = 6;
             this.removenoteButton.Text = "Remove note";
-            this.removenoteButton.UseVisualStyleBackColor = true;
+            this.removenoteButton.UseVisualStyleBackColor = false;
             this.removenoteButton.Click += new System.EventHandler(this.removenoteButton_Click);
             // 
             // savesongButton
             // 
+            this.savesongButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.savesongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.savesongButton.Location = new System.Drawing.Point(16, 196);
+            this.savesongButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savesongButton.ForeColor = System.Drawing.Color.White;
+            this.savesongButton.Location = new System.Drawing.Point(93, 354);
             this.savesongButton.Name = "savesongButton";
-            this.savesongButton.Size = new System.Drawing.Size(156, 23);
+            this.savesongButton.Size = new System.Drawing.Size(199, 61);
             this.savesongButton.TabIndex = 7;
             this.savesongButton.Text = "Save song";
-            this.savesongButton.UseVisualStyleBackColor = true;
+            this.savesongButton.UseVisualStyleBackColor = false;
             this.savesongButton.Click += new System.EventHandler(this.savesongButton_Click);
             // 
             // loadsongButton
             // 
+            this.loadsongButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.loadsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadsongButton.Location = new System.Drawing.Point(16, 225);
+            this.loadsongButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadsongButton.ForeColor = System.Drawing.Color.White;
+            this.loadsongButton.Location = new System.Drawing.Point(93, 421);
             this.loadsongButton.Name = "loadsongButton";
-            this.loadsongButton.Size = new System.Drawing.Size(156, 23);
+            this.loadsongButton.Size = new System.Drawing.Size(199, 61);
             this.loadsongButton.TabIndex = 8;
             this.loadsongButton.Text = "Load song";
-            this.loadsongButton.UseVisualStyleBackColor = true;
+            this.loadsongButton.UseVisualStyleBackColor = false;
             this.loadsongButton.Click += new System.EventHandler(this.loadsongButton_Click);
             // 
             // clearsongButton
             // 
+            this.clearsongButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.clearsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearsongButton.Location = new System.Drawing.Point(16, 254);
+            this.clearsongButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearsongButton.ForeColor = System.Drawing.Color.White;
+            this.clearsongButton.Location = new System.Drawing.Point(93, 488);
             this.clearsongButton.Name = "clearsongButton";
-            this.clearsongButton.Size = new System.Drawing.Size(156, 23);
+            this.clearsongButton.Size = new System.Drawing.Size(199, 61);
             this.clearsongButton.TabIndex = 9;
             this.clearsongButton.Text = "Clear song";
-            this.clearsongButton.UseVisualStyleBackColor = true;
+            this.clearsongButton.UseVisualStyleBackColor = false;
             this.clearsongButton.Click += new System.EventHandler(this.clearsongButton_Click);
             // 
             // playsongButton
             // 
+            this.playsongButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.playsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.playsongButton.Location = new System.Drawing.Point(16, 283);
+            this.playsongButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playsongButton.ForeColor = System.Drawing.Color.White;
+            this.playsongButton.Location = new System.Drawing.Point(94, 555);
             this.playsongButton.Name = "playsongButton";
-            this.playsongButton.Size = new System.Drawing.Size(156, 23);
+            this.playsongButton.Size = new System.Drawing.Size(198, 61);
             this.playsongButton.TabIndex = 10;
             this.playsongButton.Text = "Play song preview";
-            this.playsongButton.UseVisualStyleBackColor = true;
+            this.playsongButton.UseVisualStyleBackColor = false;
             this.playsongButton.Click += new System.EventHandler(this.playsongButton_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(322, 26);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(396, 22);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(60, 24);
             this.label4.TabIndex = 12;
             this.label4.Text = "Song:";
             // 
             // songNameTextbox
             // 
             this.songNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.songNameTextbox.Location = new System.Drawing.Point(16, 112);
+            this.songNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.songNameTextbox.Location = new System.Drawing.Point(169, 146);
             this.songNameTextbox.Name = "songNameTextbox";
-            this.songNameTextbox.Size = new System.Drawing.Size(156, 20);
+            this.songNameTextbox.Size = new System.Drawing.Size(156, 29);
             this.songNameTextbox.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 96);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(48, 148);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.Size = new System.Drawing.Size(115, 24);
             this.label5.TabIndex = 14;
-            this.label5.Text = "Naam liedje";
+            this.label5.Text = "Naam liedje:";
             // 
             // playSongRobot
             // 
+            this.playSongRobot.BackColor = System.Drawing.SystemColors.Highlight;
             this.playSongRobot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.playSongRobot.Location = new System.Drawing.Point(16, 312);
+            this.playSongRobot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playSongRobot.ForeColor = System.Drawing.Color.White;
+            this.playSongRobot.Location = new System.Drawing.Point(94, 622);
             this.playSongRobot.Name = "playSongRobot";
-            this.playSongRobot.Size = new System.Drawing.Size(156, 23);
+            this.playSongRobot.Size = new System.Drawing.Size(198, 61);
             this.playSongRobot.TabIndex = 15;
             this.playSongRobot.Text = "Play song";
-            this.playSongRobot.UseVisualStyleBackColor = true;
+            this.playSongRobot.UseVisualStyleBackColor = false;
             this.playSongRobot.Click += new System.EventHandler(this.playSongRobot_Click);
             // 
             // intervalButton
             // 
+            this.intervalButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.intervalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.intervalButton.Location = new System.Drawing.Point(109, 73);
+            this.intervalButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.intervalButton.ForeColor = System.Drawing.Color.White;
+            this.intervalButton.Location = new System.Drawing.Point(169, 93);
             this.intervalButton.Name = "intervalButton";
-            this.intervalButton.Size = new System.Drawing.Size(64, 23);
+            this.intervalButton.Size = new System.Drawing.Size(156, 40);
             this.intervalButton.TabIndex = 16;
             this.intervalButton.Text = "Add rust";
-            this.intervalButton.UseVisualStyleBackColor = true;
+            this.intervalButton.UseVisualStyleBackColor = false;
             this.intervalButton.Click += new System.EventHandler(this.intervalButton_Click);
             // 
             // Form1
@@ -238,7 +279,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(629, 399);
+            this.ClientSize = new System.Drawing.Size(851, 734);
             this.Controls.Add(this.intervalButton);
             this.Controls.Add(this.playSongRobot);
             this.Controls.Add(this.label5);
