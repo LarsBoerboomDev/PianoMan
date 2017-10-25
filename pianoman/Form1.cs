@@ -18,7 +18,7 @@ namespace pianoman
         private EV3Messenger mindstorm;
         public List<string> noteList = new List<string>();
         private int toChangeIndex;
-        private Timer timer;     
+        private Timer timer;
         public Form1(EV3Messenger ev3)
         {            
             mindstorm = ev3;
@@ -52,6 +52,12 @@ namespace pianoman
                             {
                                 noteList.Add(item);
                             }
+                        }
+                        noteList.Add("RUST.1,5");
+
+                        for (int i = 0; i <= 5; i++)
+                        {
+                            mindstorm.SendMessage("Test", "Test");
                         }
                         playRobotSong play = new playRobotSong();
                         play.playSongAsync(mindstorm , noteList);                        
@@ -133,6 +139,10 @@ namespace pianoman
         private void playSongRobot_Click(object sender, EventArgs e)
         {
             //play song on the robot
+            for (int i = 0; i <= 5; i++)
+            {
+                mindstorm.SendMessage("Test", "Test");
+            }
             playRobotSong robot = new playRobotSong();
             fillNoteList();            
             robot.playSongAsync (mindstorm, noteList);

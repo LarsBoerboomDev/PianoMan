@@ -116,6 +116,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Libarys\EV3MessengerLib.dll" />
+    <Content Include="Libarys\MetroFramework.Design.dll" />
+    <Content Include="Libarys\MetroFramework.dll" />
+    <Content Include="Libarys\MetroFramework.Fonts.dll" />
     <Content Include="notes2\A.wav" />
     <Content Include="notes2\B.wav" />
     <Content Include="notes2\C.wav" />

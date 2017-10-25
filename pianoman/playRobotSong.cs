@@ -40,7 +40,7 @@ namespace pianoman
                     sendNoteRobot(notes[0]);
                 }                
             }
-
+            Form1.playing = false;
             Thread.Sleep(1000);
             messenger.SendMessage("Music", "Finished");
         }
