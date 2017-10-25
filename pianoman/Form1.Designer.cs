@@ -28,55 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.nootCombo = new MetroFramework.Controls.MetroComboBox();
+            this.addnoteButton = new MetroFramework.Controls.MetroButton();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.timeNummeric = new System.Windows.Forms.NumericUpDown();
-            this.nootCombo = new System.Windows.Forms.ComboBox();
+            this.intervalButton = new MetroFramework.Controls.MetroButton();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.songNameTextbox = new MetroFramework.Controls.MetroTextBox();
+            this.removenoteButton = new MetroFramework.Controls.MetroButton();
+            this.savesongButton = new MetroFramework.Controls.MetroButton();
+            this.loadsongButton = new MetroFramework.Controls.MetroButton();
+            this.clearsongButton = new MetroFramework.Controls.MetroButton();
+            this.playsongButton = new MetroFramework.Controls.MetroButton();
+            this.playSongRobot = new MetroFramework.Controls.MetroButton();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.addnoteButton = new System.Windows.Forms.Button();
-            this.removenoteButton = new System.Windows.Forms.Button();
-            this.savesongButton = new System.Windows.Forms.Button();
-            this.loadsongButton = new System.Windows.Forms.Button();
-            this.clearsongButton = new System.Windows.Forms.Button();
-            this.playsongButton = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.songNameTextbox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.playSongRobot = new System.Windows.Forms.Button();
-            this.intervalButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // metroLabel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(97, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Voeg noot toe:";
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(28, 55);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(96, 19);
+            this.metroLabel1.TabIndex = 17;
+            this.metroLabel1.Text = "Voeg noot toe:";
             // 
-            // label2
+            // metroLabel2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Rust";
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(30, 85);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(42, 19);
+            this.metroLabel2.TabIndex = 18;
+            this.metroLabel2.Text = "Noot:";
             // 
-            // label3
+            // nootCombo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Noot:";
+            this.nootCombo.FormattingEnabled = true;
+            this.nootCombo.ItemHeight = 23;
+            this.nootCombo.Items.AddRange(new object[] {
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "A",
+            "B",
+            "C2"});
+            this.nootCombo.Location = new System.Drawing.Point(72, 81);
+            this.nootCombo.Name = "nootCombo";
+            this.nootCombo.Size = new System.Drawing.Size(70, 29);
+            this.nootCombo.TabIndex = 19;
+            this.nootCombo.UseSelectable = true;
+            // 
+            // addnoteButton
+            // 
+            this.addnoteButton.BackColor = System.Drawing.Color.White;
+            this.addnoteButton.Location = new System.Drawing.Point(153, 81);
+            this.addnoteButton.Name = "addnoteButton";
+            this.addnoteButton.Size = new System.Drawing.Size(101, 29);
+            this.addnoteButton.TabIndex = 20;
+            this.addnoteButton.Text = "Voeg noot toe";
+            this.addnoteButton.UseCustomBackColor = true;
+            this.addnoteButton.UseSelectable = true;
+            this.addnoteButton.Click += new System.EventHandler(this.addnoteButton_Click);
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(30, 118);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(36, 19);
+            this.metroLabel3.TabIndex = 21;
+            this.metroLabel3.Text = "Rust:";
             // 
             // timeNummeric
             // 
@@ -89,7 +117,7 @@
             0,
             0,
             65536});
-            this.timeNummeric.Location = new System.Drawing.Point(93, 100);
+            this.timeNummeric.Location = new System.Drawing.Point(72, 116);
             this.timeNummeric.Minimum = new decimal(new int[] {
             5,
             0,
@@ -104,201 +132,168 @@
             0,
             65536});
             // 
-            // nootCombo
+            // intervalButton
             // 
-            this.nootCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nootCombo.FormattingEnabled = true;
-            this.nootCombo.Items.AddRange(new object[] {
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "A",
-            "B",
-            "C2"});
-            this.nootCombo.Location = new System.Drawing.Point(94, 49);
-            this.nootCombo.Name = "nootCombo";
-            this.nootCombo.Size = new System.Drawing.Size(69, 32);
-            this.nootCombo.TabIndex = 4;
+            this.intervalButton.Location = new System.Drawing.Point(153, 116);
+            this.intervalButton.Name = "intervalButton";
+            this.intervalButton.Size = new System.Drawing.Size(101, 29);
+            this.intervalButton.TabIndex = 22;
+            this.intervalButton.Text = "Voeg rust toe";
+            this.intervalButton.UseCustomBackColor = true;
+            this.intervalButton.UseSelectable = true;
+            this.intervalButton.Click += new System.EventHandler(this.intervalButton_Click);
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(30, 161);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(83, 19);
+            this.metroLabel4.TabIndex = 23;
+            this.metroLabel4.Text = "Naam liedje:";
+            // 
+            // songNameTextbox
+            // 
+            // 
+            // 
+            // 
+            this.songNameTextbox.CustomButton.Image = null;
+            this.songNameTextbox.CustomButton.Location = new System.Drawing.Point(113, 1);
+            this.songNameTextbox.CustomButton.Name = "";
+            this.songNameTextbox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.songNameTextbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.songNameTextbox.CustomButton.TabIndex = 1;
+            this.songNameTextbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.songNameTextbox.CustomButton.UseSelectable = true;
+            this.songNameTextbox.CustomButton.Visible = false;
+            this.songNameTextbox.Lines = new string[0];
+            this.songNameTextbox.Location = new System.Drawing.Point(119, 161);
+            this.songNameTextbox.MaxLength = 32767;
+            this.songNameTextbox.Name = "songNameTextbox";
+            this.songNameTextbox.PasswordChar = '\0';
+            this.songNameTextbox.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.songNameTextbox.SelectedText = "";
+            this.songNameTextbox.SelectionLength = 0;
+            this.songNameTextbox.SelectionStart = 0;
+            this.songNameTextbox.ShortcutsEnabled = true;
+            this.songNameTextbox.Size = new System.Drawing.Size(135, 23);
+            this.songNameTextbox.TabIndex = 24;
+            this.songNameTextbox.UseSelectable = true;
+            this.songNameTextbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.songNameTextbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // removenoteButton
+            // 
+            this.removenoteButton.Location = new System.Drawing.Point(23, 204);
+            this.removenoteButton.Name = "removenoteButton";
+            this.removenoteButton.Size = new System.Drawing.Size(231, 47);
+            this.removenoteButton.TabIndex = 25;
+            this.removenoteButton.Text = "Verwijder noot";
+            this.removenoteButton.UseCustomBackColor = true;
+            this.removenoteButton.UseSelectable = true;
+            this.removenoteButton.Click += new System.EventHandler(this.removenoteButton_Click);
+            // 
+            // savesongButton
+            // 
+            this.savesongButton.Location = new System.Drawing.Point(22, 257);
+            this.savesongButton.Name = "savesongButton";
+            this.savesongButton.Size = new System.Drawing.Size(232, 47);
+            this.savesongButton.TabIndex = 26;
+            this.savesongButton.Text = "Lied opslaan";
+            this.savesongButton.UseCustomBackColor = true;
+            this.savesongButton.UseSelectable = true;
+            this.savesongButton.Click += new System.EventHandler(this.savesongButton_Click);
+            // 
+            // loadsongButton
+            // 
+            this.loadsongButton.Location = new System.Drawing.Point(22, 310);
+            this.loadsongButton.Name = "loadsongButton";
+            this.loadsongButton.Size = new System.Drawing.Size(232, 47);
+            this.loadsongButton.TabIndex = 27;
+            this.loadsongButton.Text = "Laad liedje";
+            this.loadsongButton.UseCustomBackColor = true;
+            this.loadsongButton.UseSelectable = true;
+            this.loadsongButton.Click += new System.EventHandler(this.loadsongButton_Click);
+            // 
+            // clearsongButton
+            // 
+            this.clearsongButton.Location = new System.Drawing.Point(22, 363);
+            this.clearsongButton.Name = "clearsongButton";
+            this.clearsongButton.Size = new System.Drawing.Size(232, 47);
+            this.clearsongButton.TabIndex = 28;
+            this.clearsongButton.Text = "Verwijder alle noten";
+            this.clearsongButton.UseCustomBackColor = true;
+            this.clearsongButton.UseSelectable = true;
+            this.clearsongButton.Click += new System.EventHandler(this.clearsongButton_Click);
+            // 
+            // playsongButton
+            // 
+            this.playsongButton.Location = new System.Drawing.Point(22, 416);
+            this.playsongButton.Name = "playsongButton";
+            this.playsongButton.Size = new System.Drawing.Size(232, 47);
+            this.playsongButton.TabIndex = 29;
+            this.playsongButton.Text = "Speel voorbeeld";
+            this.playsongButton.UseCustomBackColor = true;
+            this.playsongButton.UseSelectable = true;
+            this.playsongButton.Click += new System.EventHandler(this.playsongButton_Click);
+            // 
+            // playSongRobot
+            // 
+            this.playSongRobot.Location = new System.Drawing.Point(22, 469);
+            this.playSongRobot.Name = "playSongRobot";
+            this.playSongRobot.Size = new System.Drawing.Size(232, 47);
+            this.playSongRobot.TabIndex = 30;
+            this.playSongRobot.Text = "Stuur naar robot";
+            this.playSongRobot.UseCustomBackColor = true;
+            this.playSongRobot.UseSelectable = true;
+            this.playSongRobot.Click += new System.EventHandler(this.playSongRobot_Click);
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(357, 55);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(46, 19);
+            this.metroLabel5.TabIndex = 31;
+            this.metroLabel5.Text = "Liedje:";
             // 
             // listBox1
             // 
             this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 24;
-            this.listBox1.Location = new System.Drawing.Point(400, 52);
+            this.listBox1.Location = new System.Drawing.Point(357, 85);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(235, 532);
+            this.listBox1.Size = new System.Drawing.Size(235, 436);
             this.listBox1.TabIndex = 11;
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
-            // 
-            // addnoteButton
-            // 
-            this.addnoteButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.addnoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addnoteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addnoteButton.ForeColor = System.Drawing.Color.White;
-            this.addnoteButton.Location = new System.Drawing.Point(169, 47);
-            this.addnoteButton.Name = "addnoteButton";
-            this.addnoteButton.Size = new System.Drawing.Size(156, 40);
-            this.addnoteButton.TabIndex = 5;
-            this.addnoteButton.Text = "Voeg noot toe";
-            this.addnoteButton.UseVisualStyleBackColor = false;
-            this.addnoteButton.Click += new System.EventHandler(this.addnoteButton_Click);
-            // 
-            // removenoteButton
-            // 
-            this.removenoteButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.removenoteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.removenoteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.removenoteButton.ForeColor = System.Drawing.Color.White;
-            this.removenoteButton.Location = new System.Drawing.Point(94, 181);
-            this.removenoteButton.Name = "removenoteButton";
-            this.removenoteButton.Size = new System.Drawing.Size(200, 61);
-            this.removenoteButton.TabIndex = 6;
-            this.removenoteButton.Text = "Verwijder noot";
-            this.removenoteButton.UseVisualStyleBackColor = false;
-            this.removenoteButton.Click += new System.EventHandler(this.removenoteButton_Click);
-            // 
-            // savesongButton
-            // 
-            this.savesongButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.savesongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.savesongButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.savesongButton.ForeColor = System.Drawing.Color.White;
-            this.savesongButton.Location = new System.Drawing.Point(94, 248);
-            this.savesongButton.Name = "savesongButton";
-            this.savesongButton.Size = new System.Drawing.Size(199, 61);
-            this.savesongButton.TabIndex = 7;
-            this.savesongButton.Text = "Opslaan liedje";
-            this.savesongButton.UseVisualStyleBackColor = false;
-            this.savesongButton.Click += new System.EventHandler(this.savesongButton_Click);
-            // 
-            // loadsongButton
-            // 
-            this.loadsongButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.loadsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.loadsongButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loadsongButton.ForeColor = System.Drawing.Color.White;
-            this.loadsongButton.Location = new System.Drawing.Point(94, 315);
-            this.loadsongButton.Name = "loadsongButton";
-            this.loadsongButton.Size = new System.Drawing.Size(199, 61);
-            this.loadsongButton.TabIndex = 8;
-            this.loadsongButton.Text = "Liedje laden";
-            this.loadsongButton.UseVisualStyleBackColor = false;
-            this.loadsongButton.Click += new System.EventHandler(this.loadsongButton_Click);
-            // 
-            // clearsongButton
-            // 
-            this.clearsongButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.clearsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.clearsongButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clearsongButton.ForeColor = System.Drawing.Color.White;
-            this.clearsongButton.Location = new System.Drawing.Point(94, 382);
-            this.clearsongButton.Name = "clearsongButton";
-            this.clearsongButton.Size = new System.Drawing.Size(199, 61);
-            this.clearsongButton.TabIndex = 9;
-            this.clearsongButton.Text = "Verwijder song";
-            this.clearsongButton.UseVisualStyleBackColor = false;
-            this.clearsongButton.Click += new System.EventHandler(this.clearsongButton_Click);
-            // 
-            // playsongButton
-            // 
-            this.playsongButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.playsongButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.playsongButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playsongButton.ForeColor = System.Drawing.Color.White;
-            this.playsongButton.Location = new System.Drawing.Point(95, 449);
-            this.playsongButton.Name = "playsongButton";
-            this.playsongButton.Size = new System.Drawing.Size(198, 61);
-            this.playsongButton.TabIndex = 10;
-            this.playsongButton.Text = "Speel voorbeeld af";
-            this.playsongButton.UseVisualStyleBackColor = false;
-            this.playsongButton.Click += new System.EventHandler(this.playsongButton_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(396, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 24);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Liedje";
-            // 
-            // songNameTextbox
-            // 
-            this.songNameTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.songNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.songNameTextbox.Location = new System.Drawing.Point(169, 146);
-            this.songNameTextbox.Name = "songNameTextbox";
-            this.songNameTextbox.Size = new System.Drawing.Size(156, 29);
-            this.songNameTextbox.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 148);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 24);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Naam liedje:";
-            // 
-            // playSongRobot
-            // 
-            this.playSongRobot.BackColor = System.Drawing.SystemColors.Highlight;
-            this.playSongRobot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.playSongRobot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playSongRobot.ForeColor = System.Drawing.Color.White;
-            this.playSongRobot.Location = new System.Drawing.Point(95, 516);
-            this.playSongRobot.Name = "playSongRobot";
-            this.playSongRobot.Size = new System.Drawing.Size(198, 61);
-            this.playSongRobot.TabIndex = 15;
-            this.playSongRobot.Text = "Speel liedje";
-            this.playSongRobot.UseVisualStyleBackColor = false;
-            this.playSongRobot.Click += new System.EventHandler(this.playSongRobot_Click);
-            // 
-            // intervalButton
-            // 
-            this.intervalButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.intervalButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.intervalButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.intervalButton.ForeColor = System.Drawing.Color.White;
-            this.intervalButton.Location = new System.Drawing.Point(169, 93);
-            this.intervalButton.Name = "intervalButton";
-            this.intervalButton.Size = new System.Drawing.Size(156, 40);
-            this.intervalButton.TabIndex = 16;
-            this.intervalButton.Text = "Voeg rust toe";
-            this.intervalButton.UseVisualStyleBackColor = false;
-            this.intervalButton.Click += new System.EventHandler(this.intervalButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(851, 607);
-            this.Controls.Add(this.intervalButton);
+            this.ClientSize = new System.Drawing.Size(672, 538);
+            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.playSongRobot);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.songNameTextbox);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.playsongButton);
             this.Controls.Add(this.clearsongButton);
             this.Controls.Add(this.loadsongButton);
             this.Controls.Add(this.savesongButton);
             this.Controls.Add(this.removenoteButton);
+            this.Controls.Add(this.songNameTextbox);
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.intervalButton);
+            this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.addnoteButton);
             this.Controls.Add(this.nootCombo);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.timeNummeric);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.Resizable = false;
             this.Text = "Pianoman";
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).EndInit();
             this.ResumeLayout(false);
@@ -307,24 +302,23 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroComboBox nootCombo;
+        private MetroFramework.Controls.MetroButton addnoteButton;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
         private System.Windows.Forms.NumericUpDown timeNummeric;
-        private System.Windows.Forms.ComboBox nootCombo;
-        private System.Windows.Forms.Button addnoteButton;
-        private System.Windows.Forms.Button removenoteButton;
-        private System.Windows.Forms.Button savesongButton;
-        private System.Windows.Forms.Button loadsongButton;
-        private System.Windows.Forms.Button clearsongButton;
-        private System.Windows.Forms.Button playsongButton;
+        private MetroFramework.Controls.MetroButton intervalButton;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroTextBox songNameTextbox;
+        private MetroFramework.Controls.MetroButton removenoteButton;
+        private MetroFramework.Controls.MetroButton savesongButton;
+        private MetroFramework.Controls.MetroButton loadsongButton;
+        private MetroFramework.Controls.MetroButton clearsongButton;
+        private MetroFramework.Controls.MetroButton playsongButton;
+        private MetroFramework.Controls.MetroButton playSongRobot;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox songNameTextbox;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button playSongRobot;
-        private System.Windows.Forms.Button intervalButton;
     }
 }
 

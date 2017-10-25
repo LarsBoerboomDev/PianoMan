@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace pianoman
 {
-    public partial class replaceForm : Form
+    public partial class replaceForm : MetroForm
     {
 
         public string note;

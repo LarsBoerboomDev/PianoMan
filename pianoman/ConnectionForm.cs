@@ -9,10 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace pianoman
 {
-    public partial class ConnectionForm : Form
+    public partial class ConnectionForm : MetroForm
     {
         public EV3Messenger eV3Messenger;
 

@@ -9,10 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MetroFramework.Forms;
 
 namespace pianoman
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MetroForm
     {    
         private EV3Messenger mindstorm;
         public List<string> noteList = new List<string>();

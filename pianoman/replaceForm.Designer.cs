@@ -28,33 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.nootCombo = new System.Windows.Forms.ComboBox();
             this.timeNummeric = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.replaceButton = new System.Windows.Forms.Button();
+            this.replaceButton = new MetroFramework.Controls.MetroButton();
+            this.nootCombo = new MetroFramework.Controls.MetroComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).BeginInit();
             this.SuspendLayout();
-            // 
-            // nootCombo
-            // 
-            this.nootCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nootCombo.FormattingEnabled = true;
-            this.nootCombo.Items.AddRange(new object[] {
-            "C",
-            "D",
-            "E",
-            "F",
-            "G",
-            "A",
-            "B",
-            "C2",
-            "RUST"});
-            this.nootCombo.Location = new System.Drawing.Point(73, 69);
-            this.nootCombo.Name = "nootCombo";
-            this.nootCombo.Size = new System.Drawing.Size(121, 32);
-            this.nootCombo.TabIndex = 8;
-            this.nootCombo.TextChanged += new System.EventHandler(this.nootCombo_TextChanged);
             // 
             // timeNummeric
             // 
@@ -65,7 +45,7 @@
             0,
             0,
             65536});
-            this.timeNummeric.Location = new System.Drawing.Point(73, 12);
+            this.timeNummeric.Location = new System.Drawing.Point(72, 35);
             this.timeNummeric.Minimum = new decimal(new int[] {
             5,
             0,
@@ -84,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 72);
+            this.label3.Location = new System.Drawing.Point(9, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 24);
             this.label3.TabIndex = 6;
@@ -94,7 +74,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 14);
+            this.label2.Location = new System.Drawing.Point(9, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 24);
             this.label2.TabIndex = 5;
@@ -102,32 +82,49 @@
             // 
             // replaceButton
             // 
-            this.replaceButton.BackColor = System.Drawing.SystemColors.Highlight;
-            this.replaceButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.replaceButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.replaceButton.ForeColor = System.Drawing.Color.White;
-            this.replaceButton.Location = new System.Drawing.Point(14, 110);
+            this.replaceButton.Location = new System.Drawing.Point(13, 110);
             this.replaceButton.Name = "replaceButton";
-            this.replaceButton.Size = new System.Drawing.Size(179, 57);
+            this.replaceButton.Size = new System.Drawing.Size(179, 59);
             this.replaceButton.TabIndex = 9;
             this.replaceButton.Text = "Vervang";
-            this.replaceButton.UseVisualStyleBackColor = false;
+            this.replaceButton.UseCustomBackColor = true;
+            this.replaceButton.UseSelectable = true;
             this.replaceButton.Click += new System.EventHandler(this.replaceButton_Click);
+            // 
+            // nootCombo
+            // 
+            this.nootCombo.FormattingEnabled = true;
+            this.nootCombo.ItemHeight = 23;
+            this.nootCombo.Items.AddRange(new object[] {
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "A",
+            "B",
+            "C2",
+            "RUST"});
+            this.nootCombo.Location = new System.Drawing.Point(72, 73);
+            this.nootCombo.Name = "nootCombo";
+            this.nootCombo.Size = new System.Drawing.Size(120, 29);
+            this.nootCombo.TabIndex = 10;
+            this.nootCombo.UseSelectable = true;
             // 
             // replaceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(294, 206);
-            this.Controls.Add(this.replaceButton);
+            this.ClientSize = new System.Drawing.Size(212, 178);
             this.Controls.Add(this.nootCombo);
+            this.Controls.Add(this.replaceButton);
             this.Controls.Add(this.timeNummeric);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.DisplayHeader = false;
             this.MaximizeBox = false;
             this.Name = "replaceForm";
+            this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.Text = "replaceForm";
             ((System.ComponentModel.ISupportInitialize)(this.timeNummeric)).EndInit();
             this.ResumeLayout(false);
@@ -136,11 +133,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox nootCombo;
         private System.Windows.Forms.NumericUpDown timeNummeric;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button replaceButton;
+        private MetroFramework.Controls.MetroButton replaceButton;
+        private MetroFramework.Controls.MetroComboBox nootCombo;
     }
 }
