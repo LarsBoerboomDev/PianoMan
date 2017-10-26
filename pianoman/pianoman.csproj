@@ -115,6 +115,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\pianomanico2.ico" />
     <Content Include="Libarys\EV3MessengerLib.dll" />
     <Content Include="Libarys\MetroFramework.Design.dll" />
     <Content Include="Libarys\MetroFramework.dll" />

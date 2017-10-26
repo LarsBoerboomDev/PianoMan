@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.10
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pianoman", "pianoman\pianoman.csproj", "{0B8CA726-31F4-4AFC-A4DE-DBAC8BA78AA4}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PianoManInstaller", "PianoManInstaller\PianoManInstaller.vdproj", "{E6AFA05C-0BFA-4C92-AB81-FC25A6BF2316}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{0B8CA726-31F4-4AFC-A4DE-DBAC8BA78AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B8CA726-31F4-4AFC-A4DE-DBAC8BA78AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B8CA726-31F4-4AFC-A4DE-DBAC8BA78AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6AFA05C-0BFA-4C92-AB81-FC25A6BF2316}.Debug|Any CPU.ActiveCfg = Debug
+		{E6AFA05C-0BFA-4C92-AB81-FC25A6BF2316}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
