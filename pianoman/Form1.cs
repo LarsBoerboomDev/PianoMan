@@ -52,8 +52,8 @@ namespace pianoman
                             {
                                 noteList.Add(item);
                             }
+                            noteList.Add("RUST.1,0");
                         }
-                        noteList.Add("RUST.1,5");
 
                         for (int i = 0; i <= 5; i++)
                         {

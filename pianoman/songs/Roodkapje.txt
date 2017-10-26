@@ -22,6 +22,7 @@ G
 A
 G
 E
+RUST.0,5
 C
 RUST.0,5
 D

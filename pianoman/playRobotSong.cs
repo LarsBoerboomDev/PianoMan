@@ -14,6 +14,7 @@ namespace pianoman
 
         public void playSongAsync(EV3Messenger messenger, List<string> noteList)
         {
+            messenger.SendMessage("Music", "Start");
             mindstorm = messenger;
             for (int i = 0; i < noteList.Count; i++)
             {                
@@ -40,7 +41,6 @@ namespace pianoman
                     sendNoteRobot(notes[0]);
                 }                
             }
-            Form1.playing = false;
             Thread.Sleep(1000);
             messenger.SendMessage("Music", "Finished");
         }
